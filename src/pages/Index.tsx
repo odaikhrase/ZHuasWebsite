@@ -115,7 +115,7 @@ export default function Index() {
 
           <ScrollReveal delay={200}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Link to="/products" className="group relative overflow-hidden rounded-lg">
+              <Link to="/products/marble-pvc" className="group relative overflow-hidden rounded-lg">
                 <img
                   src={MARBLE_PVC_MAIN}
                   alt="Marble PVC Wall Panels"
@@ -128,7 +128,7 @@ export default function Index() {
                   </h3>
                 </div>
               </Link>
-              <Link to="/products#wpvc" className="group relative overflow-hidden rounded-lg">
+              <Link to="/products/wpvc" className="group relative overflow-hidden rounded-lg">
                 <img
                   src={WPVC_MAIN}
                   alt="WPVC Decorative Sheets"

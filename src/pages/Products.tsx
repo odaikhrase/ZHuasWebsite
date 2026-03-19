@@ -23,7 +23,7 @@ export const CATEGORIES: Category[] = [
     name: "Marble PVC Wall Panels",
     tag: "Bestseller",
     coverImage:
-      "https://static.wixstatic.com/media/8e3244_d036c68bbea54df6bdddfc0c81081bd2~mv2.jpeg",
+      "https://i.postimg.cc/DzBSXjpd/IMG-2826-(1).jpg",
     description:
       "Premium marble-finish PVC panels. Waterproof, low-maintenance, 9 ft × 4 ft, 8 mm thick. Perfect for bathrooms, kitchens, basements and feature walls.",
     specs: ["9 ft × 4 ft", "8 mm thick", "Waterproof", "Tongue & Groove"],
@@ -33,7 +33,7 @@ export const CATEGORIES: Category[] = [
     name: "WPVC Decorative Panels",
     tag: "New",
     coverImage:
-      "https://static.wixstatic.com/media/8e3244_b78970fa73db4b96b4a1fd0358f77650~mv2.jpeg",
+      "https://i.postimg.cc/9FfsWBrx/71442e2570b19f85c5f9f3232f972cdd.jpg",
     description:
       "Wood-plastic composite strength fused with PVC durability. Modern, stylish solution for walls, ceilings and feature designs with excellent rigidity.",
     specs: ["Wood-Plastic Composite", "Walls & Ceilings", "High Rigidity", "Long-Lasting"],
@@ -43,7 +43,7 @@ export const CATEGORIES: Category[] = [
     name: "Mirror Panels",
     tag: "Premium",
     coverImage:
-      "https://static.wixstatic.com/media/8e3244_d58a7b2efda24ba48429bc789eec4048~mv2.jpeg",
+      "https://i.postimg.cc/MKD1qhnM/IMG-3743.jpg",
     description:
       "Elegant mirror panel solutions that add depth, light and a luxury feel to any room — residential or commercial.",
     specs: ["Interior Use", "Various Sizes", "Custom Cut", "Elegant Finish"],
@@ -53,7 +53,7 @@ export const CATEGORIES: Category[] = [
     name: "Wall Stone Sheets",
     tag: "Natural Look",
     coverImage:
-      "https://static.wixstatic.com/media/8e3244_78da4fe422da432f80cbbe70bb69efdf~mv2.jpeg",
+      "https://i.postimg.cc/mk3pb89z/IMG-3745.jpg",
     description:
       "Realistic stone-texture wall sheets for a natural, organic aesthetic. Durable and easy to install — transforms any wall into a striking focal point.",
     specs: ["Stone Texture", "Lightweight", "Easy Install", "Indoor Use"],
