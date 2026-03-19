@@ -32,15 +32,17 @@ const PRODUCTS: ProductMap = {
     // ── ADD YOUR MARBLE PVC PRODUCTS HERE ──
     {
       id: "mp-1",
-      name: "MB-1",
+      name: "Marbel-1",
       image: "https://i.postimg.cc/DzBSXjpd/IMG-2826-(1).jpg",
-      soldOut: true, // ← add this line to mark as sold out
+      //description: "hi there how are u"
+     // soldOut: true, // ← add this line to mark as sold out
     },
     {
       id: "mp-2",
       name: "MB-2",
       image:
         "https://i.postimg.cc/brXSyGBq/IMG-2827.jpg",
+     // soldOut: true,
     },
     {
       id: "mp-3",
@@ -193,7 +195,7 @@ const PRODUCTS: ProductMap = {
 
   ],
  
-  "wpvc": [
+  "wpc": [
     // ── ADD YOUR WPVC PRODUCTS HERE ──
     {
       id: "wp-1",
@@ -294,14 +296,14 @@ const PRODUCTS: ProductMap = {
     },
     {
       id: "wp-15",
-      name: "WPVC Commercial",
+      name: "WPC Commercial",
       image:
         "https://i.postimg.cc/tRsmw4fz/IMG-3388.jpg",
       
     },
     {
       id: "wp-16",
-      name: "WPVC Commercial",
+      name: "WPC Commercial",
       image:
         "https://i.postimg.cc/25j0wkhL/IMG-3757.jpg",
       
