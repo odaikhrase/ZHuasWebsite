@@ -10,6 +10,7 @@ interface Product {
   name: string;
   image: string;
   description?: string;
+  soldOut?: boolean;
 }
  
 type ProductMap = Record<string, Product[]>;
@@ -33,6 +34,7 @@ const PRODUCTS: ProductMap = {
       id: "mp-1",
       name: "MB-1",
       image: "https://i.postimg.cc/DzBSXjpd/IMG-2826-(1).jpg",
+      soldOut: true, // ← add this line to mark as sold out
     },
     {
       id: "mp-2",
@@ -528,6 +530,11 @@ function ProductCard({
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
           />
+          {product.soldOut && (
+                <div className="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded pointer-events-none">
+                  Sold Out
+                </div>
+          )}
           {/* Hover overlay */}
           <div className="absolute inset-0 bg-secondary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
             <div className="bg-background/90 rounded-full p-3 border border-border">
