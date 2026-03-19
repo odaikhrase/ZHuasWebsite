@@ -76,16 +76,16 @@ export default function Index() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
-                to="/products"
+                to="/products/marble-pvc"
                 className="gold-gradient text-primary-foreground px-8 py-3.5 font-semibold text-sm tracking-wide uppercase rounded hover:opacity-90 transition-opacity"
               >
-                Explore Marble PVC Panels
+                Explore our Marbel
               </Link>
               <Link
                 to="/products#wpvc"
                 className="border-2 border-primary text-primary px-8 py-3.5 font-semibold text-sm tracking-wide uppercase rounded hover:bg-primary hover:text-primary-foreground transition-colors"
               >
-                Explore WPVC Sheets
+                Explore other products
               </Link>
             </div>
             <Link
@@ -98,53 +98,96 @@ export default function Index() {
         </div>
       </section>
 
-      {/* What We Offer */}
-      <section className="py-24 bg-background">
-        <div className="container">
-          <ScrollReveal>
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">What We Offer</p>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
-                We Offer Marble PVC Wall Panels & WPVC Sheets in Columbus, Ohio
-              </h2>
-              <p className="text-muted-foreground leading-relaxed">
-                Decor Emperor specializes in premium marble PVC wall panels and WPVC sheets for homes and businesses across Columbus, Ohio. We provide durable, waterproof, low‑maintenance wall solutions ideal for bathrooms, kitchens, basements, and feature walls.
-              </p>
-            </div>
-          </ScrollReveal>
+     {/* What We Offer */}
+<section className="py-24 bg-background">
+  <div className="container">
+    <ScrollReveal>
+      <div className="text-center max-w-3xl mx-auto mb-16">
+        <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">What We Offer</p>
+        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
+          We Offer Marble PVC Wall Panels, WPC sheets, Stone Pu & Mirrors in Columbus, Ohio
+        </h2>
+        <p className="text-muted-foreground leading-relaxed">
+          Decor Emperor specializes in premium marble PVC wall panels and WPVC sheets for homes and businesses across Columbus, Ohio. We provide durable, waterproof, low‑maintenance wall solutions ideal for bathrooms, kitchens, basements, and feature walls.
+        </p>
+      </div>
+    </ScrollReveal>
 
-          <ScrollReveal delay={200}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Link to="/products/marble-pvc" className="group relative overflow-hidden rounded-lg">
-                <img
-                  src={MARBLE_PVC_MAIN}
-                  alt="Marble PVC Wall Panels"
-                  className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">
-                    Marble PVC Panels
-                  </h3>
-                </div>
-              </Link>
-              <Link to="/products/wpvc" className="group relative overflow-hidden rounded-lg">
-                <img
-                  src={WPVC_MAIN}
-                  alt="WPVC Decorative Sheets"
-                  className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">
-                    WPVC Decorative Sheets
-                  </h3>
-                </div>
-              </Link>
-            </div>
-          </ScrollReveal>
+    <ScrollReveal delay={200}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        {/* Marble PVC */}
+        <div className="group relative overflow-hidden rounded-lg">
+          <img
+            src="https://i.postimg.cc/DzBSXjpd/IMG-2826-(1).jpg"
+            alt="Marble PVC Wall Panels"
+            className="w-full h-80 object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
+            <h3 className="font-serif text-xl font-bold text-secondary-foreground">
+              Marble PVC Panels
+            </h3>
+          </div>
         </div>
-      </section>
+
+        {/* WPVC */}
+        <div className="group relative overflow-hidden rounded-lg">
+          <img
+            src="https://i.postimg.cc/9FfsWBrx/71442e2570b19f85c5f9f3232f972cdd.jpg"
+            alt="WPVC Decorative Sheets"
+            className="w-full h-80 object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
+            <h3 className="font-serif text-xl font-bold text-secondary-foreground">
+              WPVC Decorative Sheets
+            </h3>
+          </div>
+        </div>
+
+        {/* Mirror Panels */}
+        <div className="group relative overflow-hidden rounded-lg">
+          <img
+            src="https://i.postimg.cc/MKD1qhnM/IMG-3743.jpg"
+            alt="Mirror Panels"
+            className="w-full h-80 object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
+            <h3 className="font-serif text-xl font-bold text-secondary-foreground">
+              Mirror Panels
+            </h3>
+          </div>
+        </div>
+
+        {/* Stone Sheets */}
+        <div className="group relative overflow-hidden rounded-lg">
+          <img
+            src="https://i.postimg.cc/mk3pb89z/IMG-3745.jpg"
+            alt="Wall Stone Sheets"
+            className="w-full h-80 object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
+            <h3 className="font-serif text-xl font-bold text-secondary-foreground">
+              Wall Stone Sheets
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      {/* Explore button */}
+      <div className="text-center mt-10">
+        <Link
+          to="/products"
+          className="inline-flex gold-gradient text-black px-10 py-3.5 font-semibold text-sm tracking-wide uppercase rounded hover:opacity-90 transition-opacity"
+        >
+          Explore Our Products
+        </Link>
+      </div>
+    </ScrollReveal>
+  </div>
+</section>
 
       {/* Why Choose */}
       <section className="py-24 bg-secondary">
