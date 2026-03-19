@@ -1,123 +1,184 @@
+
+
 import { Link } from "react-router-dom";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { MARBLE_PVC_MAIN, WPVC_MAIN, INSTALLATION_IMAGES } from "@/data/images";
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
-import { useEffect } from "react";
-
-const INSTALL_STEPS = [
-  { title: "🔧 Step 1: Prepare the Wall Surface", content: "Make sure the wall is clean, dry, and smooth. Remove dust, loose paint, or old adhesive. Fill large holes or uneven areas for a flat finish." },
-  { title: "📏 Step 2: Measure & Plan Your Layout", content: "Measure the height and width of your wall. Plan your layout to reduce cutting and ensure a seamless look. Dry‑fit the panels before applying adhesive to confirm alignment." },
-  { title: "✂️ Step 3: Cut Panels (If Needed)", content: "Use a utility knife, circular saw, or table saw. Cut from the back side for cleaner edges. Always double‑check measurements before cutting." },
-  { title: "🧱 Step 4: Apply Adhesive", content: "Use a strong construction adhesive suitable for PVC panels. Apply adhesive in vertical lines or dots across the back. Optional: Add finishing nails or screws around the edges for extra support." },
-  { title: "📌 Step 5: Install the First Panel", content: "Start from one corner or the bottom of the wall. Press the panel firmly into place. Ensure it is perfectly level — this sets the foundation for the rest." },
-  { title: "🔗 Step 6: Connect Additional Panels", content: "Slide the next panel into the tongue‑and‑groove joint. Press firmly to lock it in. Continue across the wall, checking alignment as you go." },
-  { title: "🎨 Step 7: Finish Edges & Corners", content: "Use matching trims for corners, edges, and end caps. In wet areas (bathrooms, kitchens), seal joints with silicone for waterproofing." },
-  { title: "🧼 Step 8: Clean & Inspect", content: "Wipe the panels with a damp cloth to remove dust or fingerprints. Check all joints to ensure a tight, seamless finish." },
+import { ArrowRight } from "lucide-react";
+ 
+// ─── CATEGORY TYPE ────────────────────────────────────────────────────────────
+export interface Category {
+  slug: string;
+  name: string;
+  tag: string;
+  coverImage: string;
+  description: string;
+  specs: string[];
+}
+ 
+// ─── CATEGORIES DATA ──────────────────────────────────────────────────────────
+// Edit name, description, tag, specs, and coverImage for each category.
+// The `slug` must match the route: /products/:slug
+export const CATEGORIES: Category[] = [
+  {
+    slug: "marble-pvc",
+    name: "Marble PVC Wall Panels",
+    tag: "Bestseller",
+    coverImage:
+      "https://static.wixstatic.com/media/8e3244_d036c68bbea54df6bdddfc0c81081bd2~mv2.jpeg",
+    description:
+      "Premium marble-finish PVC panels. Waterproof, low-maintenance, 9 ft × 4 ft, 8 mm thick. Perfect for bathrooms, kitchens, basements and feature walls.",
+    specs: ["9 ft × 4 ft", "8 mm thick", "Waterproof", "Tongue & Groove"],
+  },
+  {
+    slug: "wpvc",
+    name: "WPVC Decorative Panels",
+    tag: "New",
+    coverImage:
+      "https://static.wixstatic.com/media/8e3244_b78970fa73db4b96b4a1fd0358f77650~mv2.jpeg",
+    description:
+      "Wood-plastic composite strength fused with PVC durability. Modern, stylish solution for walls, ceilings and feature designs with excellent rigidity.",
+    specs: ["Wood-Plastic Composite", "Walls & Ceilings", "High Rigidity", "Long-Lasting"],
+  },
+  {
+    slug: "mirror",
+    name: "Mirror Panels",
+    tag: "Premium",
+    coverImage:
+      "https://static.wixstatic.com/media/8e3244_d58a7b2efda24ba48429bc789eec4048~mv2.jpeg",
+    description:
+      "Elegant mirror panel solutions that add depth, light and a luxury feel to any room — residential or commercial.",
+    specs: ["Interior Use", "Various Sizes", "Custom Cut", "Elegant Finish"],
+  },
+  {
+    slug: "stone-sheets",
+    name: "Wall Stone Sheets",
+    tag: "Natural Look",
+    coverImage:
+      "https://static.wixstatic.com/media/8e3244_78da4fe422da432f80cbbe70bb69efdf~mv2.jpeg",
+    description:
+      "Realistic stone-texture wall sheets for a natural, organic aesthetic. Durable and easy to install — transforms any wall into a striking focal point.",
+    specs: ["Stone Texture", "Lightweight", "Easy Install", "Indoor Use"],
+  },
 ];
-
+ 
+// ─── CATEGORY CARD ────────────────────────────────────────────────────────────
+function CategoryCard({ category }: { category: Category }) {
+  return (
+    <Link
+      to={`/products/${category.slug}`}
+      className="group relative flex flex-col overflow-hidden rounded-lg border border-border bg-card hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+    >
+      {/* Cover image */}
+      <div className="relative overflow-hidden h-64">
+        <img
+          src={category.coverImage}
+          alt={category.name}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent" />
+ 
+        {/* Tag badge */}
+        <span className="absolute top-4 left-4 gold-gradient text-primary-foreground text-xs font-bold tracking-widest uppercase px-3 py-1 rounded">
+          {category.tag}
+        </span>
+      </div>
+ 
+      {/* Body */}
+      <div className="flex flex-col flex-1 p-6">
+        <h3 className="font-serif text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+          {category.name}
+        </h3>
+        <p className="text-muted-foreground text-sm leading-relaxed mb-5 flex-1">
+          {category.description}
+        </p>
+ 
+        {/* Spec pills */}
+        <div className="flex flex-wrap gap-2 mb-5">
+          {category.specs.map((spec) => (
+            <span
+              key={spec}
+              className="text-xs border border-border text-muted-foreground px-2.5 py-1 rounded uppercase tracking-wide"
+            >
+              {spec}
+            </span>
+          ))}
+        </div>
+ 
+        {/* CTA row */}
+        <div className="flex items-center gap-1.5 text-primary text-sm font-semibold tracking-wide uppercase group-hover:gap-3 transition-all duration-200">
+          <span>View Products</span>
+          <ArrowRight className="w-4 h-4" />
+        </div>
+      </div>
+    </Link>
+  );
+}
+ 
+// ─── PAGE ─────────────────────────────────────────────────────────────────────
 export default function Products() {
-  useEffect(() => {
-    if (window.location.hash === "#wpvc") {
-      setTimeout(() => {
-        document.getElementById("wpvc")?.scrollIntoView({ behavior: "smooth" });
-      }, 100);
-    }
-  }, []);
-
   return (
     <>
-      {/* Marble PVC */}
+      {/* Page header */}
+      <section className="py-20 bg-secondary">
+        <div className="container">
+          <ScrollReveal>
+            <div className="text-center max-w-3xl mx-auto">
+              <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">
+                Our Collections
+              </p>
+              <h1 className="font-serif text-4xl sm:text-5xl font-bold text-secondary-foreground mb-6">
+                Premium Wall Panel Collections
+              </h1>
+              <p className="text-secondary-foreground/70 leading-relaxed">
+                Explore our full range of luxury wall panel solutions — from marble PVC and WPVC
+                decorative sheets to mirror panels and natural stone finishes. Click any collection
+                to browse all available products.
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+ 
+      {/* Thin gold divider */}
+      <div className="h-px gold-gradient opacity-40" />
+ 
+      {/* Grid */}
       <section className="py-24 bg-background">
         <div className="container">
-          <ScrollReveal>
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">Our Products</p>
-              <h1 className="font-serif text-3xl sm:text-5xl font-bold text-foreground mb-6">
-                Marble PVC Wall Panels
-              </h1>
-              <p className="text-muted-foreground leading-relaxed">
-                Decor Emperor specializes in premium marble PVC wall panels for homes and businesses across Columbus, Ohio. We provide durable, waterproof, low‑maintenance wall solutions ideal for bathrooms, kitchens, basements, and feature walls.
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={200}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
-              <img src={MARBLE_PVC_MAIN} alt="Marble PVC Wall Panel product" className="w-full h-72 object-cover rounded-lg" loading="lazy" />
-              {INSTALLATION_IMAGES.slice(0, 5).map((img, i) => (
-                <img key={i} src={img.src} alt={img.alt} className="w-full h-72 object-cover rounded-lg" loading="lazy" />
-              ))}
-            </div>
-          </ScrollReveal>
-
-          {/* Installation Guide */}
-          <ScrollReveal delay={300}>
-            <div className="max-w-3xl mx-auto">
-              <h2 className="font-serif text-2xl font-bold text-foreground mb-2 text-center">
-                🛠️ How to Install Marble PVC Wall Panels
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
+            {CATEGORIES.map((cat, i) => (
+              <ScrollReveal key={cat.slug} delay={i * 100}>
+                <CategoryCard category={cat} />
+              </ScrollReveal>
+            ))}
+          </div>
+ 
+          {/* Bottom CTA */}
+          <ScrollReveal delay={400}>
+            <div className="mt-20 bg-card border border-border rounded-xl p-12 text-center max-w-2xl mx-auto">
+              <h2 className="font-serif text-2xl font-bold text-foreground mb-4">
+                Not sure which panel is right for you?
               </h2>
-              <p className="text-muted-foreground text-center mb-8 text-sm">
-                Installing marble‑finish PVC wall panels is a fast, clean, and beginner‑friendly process.
+              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                Contact us for a free consultation. We'll help you find the perfect solution for
+                your space and budget.
               </p>
-              <Accordion type="single" collapsible className="border border-border rounded-lg overflow-hidden">
-                {INSTALL_STEPS.map((step, i) => (
-                  <AccordionItem key={i} value={`step-${i}`} className="border-border">
-                    <AccordionTrigger className="px-6 text-left font-semibold text-foreground hover:no-underline hover:text-primary">
-                      {step.title}
-                    </AccordionTrigger>
-                    <AccordionContent className="px-6 text-muted-foreground leading-relaxed">
-                      {step.content}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-
-              <div className="mt-8 bg-card border border-border rounded-lg p-6">
-                <h3 className="font-serif text-lg font-bold text-foreground mb-3">⭐ Why Customers Love This Installation Method</h3>
-                <ul className="space-y-1 text-muted-foreground text-sm">
-                  <li>• No grout, no mess</li>
-                  <li>• Lightweight and easy to handle</li>
-                  <li>• Fast installation — most walls finish in hours</li>
-                  <li>• Waterproof and moisture‑resistant</li>
-                  <li>• Perfect for DIY or professional installers</li>
-                </ul>
-              </div>
+              <Link
+                to="/contact"
+                className="inline-flex gold-gradient text-primary-foreground px-8 py-3 font-semibold text-sm tracking-wide uppercase rounded hover:opacity-90 transition-opacity"
+              >
+                Get a Free Quote
+              </Link>
             </div>
           </ScrollReveal>
         </div>
       </section>
-
-      {/* WPVC */}
-      <section id="wpvc" className="py-24 bg-secondary">
-        <div className="container">
-          <ScrollReveal>
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">WPVC Collection</p>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-secondary-foreground mb-6">
-                WPVC Decorative Panels
-              </h2>
-              <p className="text-secondary-foreground/70 leading-relaxed">
-                Our WPVC panels combine wood‑plastic strength with PVC durability, offering a modern, stylish solution for interior walls, ceilings, and feature designs. They deliver a premium look with excellent rigidity and long‑lasting performance.
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={200}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <img src={WPVC_MAIN} alt="WPVC Decorative Sheets" className="w-full h-72 object-cover rounded-lg" loading="lazy" />
-              {INSTALLATION_IMAGES.slice(5).map((img, i) => (
-                <img key={i} src={img.src} alt={img.alt} className="w-full h-72 object-cover rounded-lg" loading="lazy" />
-              ))}
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Sticky CTA */}
+ 
+      {/* Sticky button */}
       <div className="fixed bottom-6 right-6 z-40">
         <Link
           to="/contact"
-          className="gold-gradient text-primary-foreground px-6 py-3 font-semibold text-sm tracking-wide uppercase rounded-full shadow-lg hover:opacity-90 transition-opacity"
+          className="gold-gradient text-primary-foreground px-6 py-3 font-semibold text-sm tracking-wide uppercase rounded-full shadow-lg hover:opacity-90 transition-opacity flex items-center gap-2"
         >
           Request Pricing
         </Link>
@@ -125,3 +186,4 @@ export default function Products() {
     </>
   );
 }
+ 

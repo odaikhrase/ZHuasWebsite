@@ -41,7 +41,7 @@ export default function Shipping() {
 
         <ScrollReveal delay={500}>
           <div className="text-center mt-12">
-            <p className="text-muted-foreground mb-4">Have questions about pickup or delivery?</p>
+            <p className="text-muted-foreground mb-4">Have questions about pickup?</p>
             <Link
               to="/contact"
               className="inline-flex gold-gradient text-primary-foreground px-8 py-3 font-semibold text-sm tracking-wide uppercase rounded hover:opacity-90 transition-opacity"
