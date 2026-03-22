@@ -32,7 +32,7 @@ export default function Gallery() {
                 Gallery
               </h1>
               <p className="text-muted-foreground">
-                Browse our collection of premium marble PVC wall panel installations across Columbus, Ohio.
+                Browse our collection of premium marble PVC wall panel installations across Boston, Massachusetts.
               </p>
             </div>
           </ScrollReveal>

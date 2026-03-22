@@ -7,35 +7,35 @@ export const WPVC_MAIN = "https://static.wixstatic.com/media/8e3244_6fe6e4e35dfd
 export const INSTALLATION_IMAGES = [
   {
     src: "https://static.wixstatic.com/media/8e3244_d036c68bbea54df6bdddfc0c81081bd2~mv2.jpeg/v1/fill/w_736,h_948,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_d036c68bbea54df6bdddfc0c81081bd2~mv2.jpeg",
-    alt: "Waterproof luxury marble PVC wall panels installed in a Columbus, Ohio bathroom",
+    alt: "Waterproof luxury marble PVC wall panels installed in a Boston, Massachusetts bathroom",
   },
   {
     src: "https://static.wixstatic.com/media/8e3244_9ca264925e2e48cc9212617a5a544291~mv2.jpeg/v1/fill/w_1000,h_1537,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_9ca264925e2e48cc9212617a5a544291~mv2.jpeg",
-    alt: "Waterproof luxury marble PVC wall panels installed in a Columbus, Ohio bathroom",
+    alt: "Waterproof luxury marble PVC wall panels installed in a Boston, Massachusetts bathroom",
   },
   {
     src: "https://static.wixstatic.com/media/8e3244_aeac7f2d361844119458e399e0c9a749~mv2.jpeg/v1/fill/w_1000,h_1159,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_aeac7f2d361844119458e399e0c9a749~mv2.jpeg",
-    alt: "Waterproof luxury marble PVC wall panels installed in a Columbus, Ohio bathroom",
+    alt: "Waterproof luxury marble PVC wall panels installed in a Boston, Massachusetts bathroom",
   },
   {
     src: "https://static.wixstatic.com/media/8e3244_d58a7b2efda24ba48429bc789eec4048~mv2.jpeg/v1/fill/w_1000,h_1237,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_d58a7b2efda24ba48429bc789eec4048~mv2.jpeg",
-    alt: "Luxury marble PVC wall panels installed in a modern living room in Columbus, Ohio",
+    alt: "Luxury marble PVC wall panels installed in a modern living room in Boston, Massachusetts",
   },
   {
     src: "https://static.wixstatic.com/media/8e3244_70e4334ce6ee49a2afd1409833ee2812~mv2.jpeg/v1/fill/w_736,h_948,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_70e4334ce6ee49a2afd1409833ee2812~mv2.jpeg",
-    alt: "Waterproof luxury marble PVC wall panels installed in a Columbus, Ohio bathroom",
+    alt: "Waterproof luxury marble PVC wall panels installed in a Boston, Massachusetts bathroom",
   },
   {
     src: "https://static.wixstatic.com/media/8e3244_2f47d1a3fe5c4b5293977170a66fb311~mv2.jpeg/v1/fill/w_576,h_751,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_2f47d1a3fe5c4b5293977170a66fb311~mv2.jpeg",
-    alt: "Luxury marble PVC wall panels installed in a modern living room in Columbus, Ohio",
+    alt: "Luxury marble PVC wall panels installed in a modern living room in Boston, Massachusetts",
   },
   {
     src: "https://static.wixstatic.com/media/8e3244_b78970fa73db4b96b4a1fd0358f77650~mv2.jpeg/v1/fill/w_1000,h_1333,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_b78970fa73db4b96b4a1fd0358f77650~mv2.jpeg",
-    alt: "Luxury marble PVC wall panels installed in a modern living room in Columbus, Ohio",
+    alt: "Luxury marble PVC wall panels installed in a modern living room in Boston, Massachusetts",
   },
   {
     src: "https://static.wixstatic.com/media/8e3244_5626acd865b54603838f1712c8dcaa94~mv2.jpeg/v1/fill/w_1000,h_750,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_5626acd865b54603838f1712c8dcaa94~mv2.jpeg",
-    alt: "Luxury marble PVC wall panels installed in a Columbus, Ohio commercial space",
+    alt: "Luxury marble PVC wall panels installed in a Boston, Massachusetts commercial space",
   },
 ];
 

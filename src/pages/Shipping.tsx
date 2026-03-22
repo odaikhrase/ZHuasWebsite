@@ -19,7 +19,7 @@ export default function Shipping() {
           <div className="bg-card border border-border rounded-xl p-8 sm:p-12 mb-8">
             <Package className="w-10 h-10 text-primary mb-6" />
             <p className="text-foreground leading-relaxed text-lg">
-              At Decor Emperor, we are committed to providing a premium experience from product selection to final handoff. To ensure product integrity and customer satisfaction, we currently offer pickup only from our facility in Columbus, Ohio.
+              At ZHaus Design, we are committed to providing a premium experience from product selection to final handoff. To ensure product integrity and customer satisfaction, we currently offer pickup only from our facility in Boston, Massachusetts.
             </p>
           </div>
         </ScrollReveal>
@@ -31,7 +31,7 @@ export default function Shipping() {
               Pickup Location
             </h2>
             <p className="text-primary-foreground/90 text-lg font-medium">
-              Columbus, Ohio
+              Boston, Massachusetts
             </p>
             <p className="text-primary-foreground/70 text-sm mt-2">
               Contact us for facility details and scheduling.

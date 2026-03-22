@@ -21,15 +21,22 @@ function Header() {
       <div className="bg-secondary text-secondary-foreground">
         <div className="container flex items-center justify-between py-2 text-sm">
           <span className="hidden sm:inline font-sans text-secondary-foreground/80">
-            Premium Marble PVC & WPVC Wall Panels — Columbus, Ohio
+            Premium Marble PVC & WPVC Wall Panels — Boston, Massachusetts
           </span>
           <div className="flex items-center gap-4 ml-auto">
             <a
-              href="mailto:info@decoremperor.com"
+              href="mailto:ZhausDesign@outlook.com"
               className="flex items-center gap-1.5 hover:text-primary transition-colors"
             >
               <Mail className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">info@decoremperor.com</span>
+              <span className="hidden sm:inline">ZhausDesign@outlook.com</span>
+            </a>
+            <a
+              href="tel:978-979-9150"
+              className="flex items-center gap-1.5 hover:text-primary transition-colors ml-2"
+            >
+              <Phone className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">978-979-9150</span>
             </a>
           </div>
         </div>
@@ -40,7 +47,7 @@ function Header() {
         <div className="container flex items-center justify-between py-4">
           <Link to="/" className="flex items-center gap-3 group" onClick={() => setOpen(false)}>
             <span className="font-serif text-2xl font-bold tracking-wide text-foreground group-hover:text-primary transition-colors">
-              DECOR EMPEROR
+              ZHAUS DESIGN
             </span>
           </Link>
 
@@ -124,9 +131,9 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="font-serif text-2xl font-bold mb-4">DECOR EMPEROR</h3>
+            <h3 className="font-serif text-2xl font-bold mb-4">ZHAUS DESIGN</h3>
             <p className="text-secondary-foreground/70 leading-relaxed text-sm">
-              Decor Emperor LLC specializes in premium marble PVC wall panels and WPVC sheets for homes and businesses across Columbus, Ohio.
+              ZHaus Design specializes in high-end interior design, premium marble PVC wall panels, and WPVC sheets for homes and businesses across Boston, Massachusetts.
             </p>
           </div>
 
@@ -153,17 +160,23 @@ function Footer() {
             <div className="space-y-3 text-sm text-secondary-foreground/70">
               <p>
                 <span className="text-secondary-foreground font-medium">Email:</span>{" "}
-                <a href="mailto:info@decoremperor.com" className="hover:text-primary transition-colors">
-                  info@decoremperor.com
+                <a href="mailto:ZhausDesign@outlook.com" className="hover:text-primary transition-colors">
+                  ZhausDesign@outlook.com
+                </a>
+              </p>
+              <p>
+                <span className="text-secondary-foreground font-medium">Phone:</span>{" "}
+                <a href="tel:978-979-9150" className="hover:text-primary transition-colors">
+                  978-979-9150
                 </a>
               </p>
               <p>
                 <span className="text-secondary-foreground font-medium">Business:</span>{" "}
-                Decor Emperor LLC
+                ZHaus Design
               </p>
               <p>
                 <span className="text-secondary-foreground font-medium">Location:</span>{" "}
-                Columbus, Ohio
+                Boston, Massachusetts
               </p>
             </div>
           </div>
@@ -171,10 +184,10 @@ function Footer() {
 
         <div className="border-t border-secondary-foreground/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-secondary-foreground/50">
-            © {new Date().getFullYear()} Decor Emperor LLC. All rights reserved.
+            © {new Date().getFullYear()} ZHaus Design. All rights reserved.
           </p>
           <p className="text-xs text-secondary-foreground/50">
-            Premium Marble PVC & WPVC Wall Panels
+            High-End Interior Design & Premium Wall Panels
           </p>
         </div>
       </div>

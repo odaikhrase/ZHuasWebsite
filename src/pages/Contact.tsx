@@ -120,8 +120,8 @@ export default function Contact() {
                 <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                  <a href="mailto:info@decoremperor.com" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                    info@decoremperor.com
+                  <a href="mailto:ZhausDesign@outlook.com" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                    ZhausDesign@outlook.com
                   </a>
                 </div>
               </div>
@@ -129,7 +129,7 @@ export default function Contact() {
                 <Building2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Business</h3>
-                  <p className="text-muted-foreground text-sm">Decor Emperor LLC</p>
+                  <p className="text-muted-foreground text-sm">ZHaus Design</p>
                   <p className="text-muted-foreground text-sm">Premium Marble PVC & WPVC Wall Panels</p>
                 </div>
               </div>

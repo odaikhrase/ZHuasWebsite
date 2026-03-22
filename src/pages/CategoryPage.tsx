@@ -3,7 +3,7 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ArrowLeft, X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import { CATEGORIES } from "./Products";
- 
+
 // ─── TYPES ────────────────────────────────────────────────────────────────────
 interface Product {
   id: string;
@@ -12,9 +12,9 @@ interface Product {
   description?: string;
   soldOut?: boolean;
 }
- 
+
 type ProductMap = Record<string, Product[]>;
- 
+
 // ─────────────────────────────────────────────────────────────────────────────
 // PRODUCT DATA
 // Add your products here manually under the matching category slug.
@@ -35,14 +35,14 @@ const PRODUCTS: ProductMap = {
       name: "Marbel-1",
       image: "https://i.postimg.cc/DzBSXjpd/IMG-2826-(1).jpg",
       //description: "hi there how are u"
-     // soldOut: true, // ← add this line to mark as sold out
+      // soldOut: true, // ← add this line to mark as sold out
     },
     {
       id: "mp-2",
       name: "MB-2",
       image:
         "https://i.postimg.cc/brXSyGBq/IMG-2827.jpg",
-     // soldOut: true,
+      // soldOut: true,
     },
     {
       id: "mp-3",
@@ -146,56 +146,56 @@ const PRODUCTS: ProductMap = {
       image:
         "https://i.postimg.cc/TYMPZZKr/IMG-3677.jpg",
     },
-     {
+    {
       id: "mp-20",
       name: "MB-20",
       image:
         "https://i.postimg.cc/c4RJZX3D/IMG-3678.jpg",
     },
-     {
+    {
       id: "mp-21",
       name: "MB-21",
       image:
         "https://i.postimg.cc/qMs70jn0/IMG-3679.jpg",
     },
-     {
+    {
       id: "mp-22",
       name: "MB-22",
       image:
         "https://i.postimg.cc/CxwxKkH1/IMG-3680.jpg",
     },
-     {
+    {
       id: "mp-23",
       name: "MB-23",
       image:
         "https://i.postimg.cc/0QK84fxW/IMG-3682.jpg",
-     
+
     },
-     {
+    {
       id: "mp-24",
       name: "MB-24",
       image:
         "https://i.postimg.cc/PJmdX5Cd/IMG-3683.jpg",
-     
+
     },
-     {
+    {
       id: "mp-25",
       name: "MB-25",
       image:
         "https://i.postimg.cc/VvjzfkJt/IMG-3684.jpg",
-      
+
     },
-     {
+    {
       id: "mp-26",
       name: "MB-26",
       image:
         "https://i.postimg.cc/fLVLNs7m/IMG-3672.jpg",
-    
+
     },
 
   ],
- 
-  "wpc": [
+
+  "wpvc": [
     // ── ADD YOUR WPVC PRODUCTS HERE ──
     {
       id: "wp-1",
@@ -208,143 +208,143 @@ const PRODUCTS: ProductMap = {
       name: "WPVC Living Space",
       image:
         "https://i.postimg.cc/jd93R0pB/IMG-2753.jpg",
-      
+
     },
     {
       id: "wp-3",
       name: "WPVC Commercial",
       image:
         "https://i.postimg.cc/d0R5R7Lz/IMG-2757.jpg",
-      
+
     },
-     {
+    {
       id: "wp-4",
       name: "WPVC Commercial",
       image:
         "https://i.postimg.cc/hvYs4T5m/IMG-2782.jpg",
-      
+
     },
-     {
+    {
       id: "wp-5",
       name: "WPVC Commercial",
       image:
         "https://i.postimg.cc/7Yp9p178/IMG-2783.jpg",
-      
+
     },
-     {
+    {
       id: "wp-6",
       name: "WPVC Commercial",
       image:
         "https://i.postimg.cc/PqH4qt2g/IMG-2787.jpg",
-      
+
     },
-     {
+    {
       id: "wp-7",
       name: "WPVC Commercial",
       image:
         "https://i.postimg.cc/4yYv0nx3/IMG-2844.jpg",
-      
+
     },
-     {
+    {
       id: "wp-8",
       name: "WPVC Commercial",
       image:
         "https://i.postimg.cc/nrNKfZXg/IMG-3141.jpg",
-      
+
     },
-     {
+    {
       id: "wp-9",
       name: "WPVC Commercial",
       image:
         "https://i.postimg.cc/rFtCCdHb/IMG-3142.jpg",
-      
+
     },
-     {
+    {
       id: "wp-10",
       name: "WPVC Commercial",
       image:
         "https://i.postimg.cc/GhsJJBNc/IMG-3143.jpg",
-      
+
     },
-     {
+    {
       id: "wp-11",
       name: "WPVC Commercial",
       image:
         "https://i.postimg.cc/Nj66S3BS/IMG-3224.jpg",
-      
+
     },
-     {
+    {
       id: "wp-12",
       name: "WPVC Commercial",
       image:
         "https://i.postimg.cc/zfpnXTLf/IMG-3225.jpg",
-      
+
     },
     {
       id: "wp-13",
       name: "WPVC Commercial",
       image:
         "https://i.postimg.cc/j5FPyK40/IMG-3226.jpg",
-      
+
     },
     {
       id: "wp-14",
       name: "WPVC Commercial",
       image:
         "https://i.postimg.cc/Znv3cgwB/IMG-3227.jpg",
-      
+
     },
     {
       id: "wp-15",
       name: "WPC Commercial",
       image:
         "https://i.postimg.cc/tRsmw4fz/IMG-3388.jpg",
-      
+
     },
     {
       id: "wp-16",
       name: "WPC Commercial",
       image:
         "https://i.postimg.cc/25j0wkhL/IMG-3757.jpg",
-      
+
     },
-      
+
   ],
- 
+
   "mirror": [
     // ── ADD YOUR MIRROR PRODUCTS HERE ──
-   {
-    id: "mir-1",
-    name: "Full-Length Mirror Panel",
-    image: "https://i.postimg.cc/MKD1qhnM/IMG-3743.jpg",
-      
-   },
     {
-    id: "mir-1",
-    name: "Full-Length Mirror Panel",
-    image: "https://i.postimg.cc/tgV1Zf4P/IMG-3744.jpg",
-     
-   },
+      id: "mir-1",
+      name: "Full-Length Mirror Panel",
+      image: "https://i.postimg.cc/MKD1qhnM/IMG-3743.jpg",
+
+    },
     {
-    id: "mir-1",
-    name: "Full-Length Mirror Panel",
-    image: "https://i.postimg.cc/g21jWDHV/IMG-3748-(1).jpg",
-     
-   },
+      id: "mir-1",
+      name: "Full-Length Mirror Panel",
+      image: "https://i.postimg.cc/tgV1Zf4P/IMG-3744.jpg",
+
+    },
     {
-    id: "mir-1",
-    name: "Full-Length Mirror Panel",
-    image: "https://i.postimg.cc/GtM3SJp0/IMG-3749.jpg",
-      
-   },
+      id: "mir-1",
+      name: "Full-Length Mirror Panel",
+      image: "https://i.postimg.cc/g21jWDHV/IMG-3748-(1).jpg",
+
+    },
     {
-    id: "mir-1",
-    name: "Full-Length Mirror Panel",
-    image: "https://i.postimg.cc/zXBGHMdw/IMG-3750.jpg",
-      
-   },
+      id: "mir-1",
+      name: "Full-Length Mirror Panel",
+      image: "https://i.postimg.cc/GtM3SJp0/IMG-3749.jpg",
+
+    },
+    {
+      id: "mir-1",
+      name: "Full-Length Mirror Panel",
+      image: "https://i.postimg.cc/zXBGHMdw/IMG-3750.jpg",
+
+    },
   ],
- 
+
   "stone-sheets": [
     // ── ADD YOUR STONE SHEET PRODUCTS HERE ──
     {
@@ -383,37 +383,37 @@ const PRODUCTS: ProductMap = {
       image:
         "https://static.wixstatic.com/media/8e3244_28fe8f82ecd949c6abb39c2ad2fab06e~mv2.jpeg",
     },
-      {
+    {
       id: "st-7",
       name: "Stone Sheet — Style 7",
       image:
         "https://i.postimg.cc/mk3pb89z/IMG-3745.jpg",
     },
-      {
+    {
       id: "st-8",
       name: "Stone Sheet — Style 8",
       image:
         "https://i.postimg.cc/CLNrXrYk/IMG-3754.jpg",
     },
-      {
+    {
       id: "st-9",
       name: "Stone Sheet — Style 9",
       image:
         "https://i.postimg.cc/vZ2qH14b/IMG-3756.jpg",
     },
-      {
+    {
       id: "st-10",
       name: "Stone Sheet — Style 10",
       image:
         "https://i.postimg.cc/N0WdmW7f/IMG-3787.jpg",
     },
-     {
+    {
       id: "st-11",
       name: "Stone Sheet — Style 11",
       image:
         "https://i.postimg.cc/0jvZHDBV/IMG-3790.jpg",
     },
-     {
+    {
       id: "st-12",
       name: "Stone Sheet — Style 12",
       image:
@@ -422,7 +422,7 @@ const PRODUCTS: ProductMap = {
 
   ],
 };
- 
+
 // ─── LIGHTBOX ─────────────────────────────────────────────────────────────────
 function Lightbox({
   products,
@@ -436,7 +436,7 @@ function Lightbox({
   onNav: (dir: number) => void;
 }) {
   const product = products[index];
- 
+
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -446,12 +446,12 @@ function Lightbox({
     document.addEventListener("keydown", handler);
     return () => document.removeEventListener("keydown", handler);
   }, [onClose, onNav]);
- 
+
   useEffect(() => {
     document.body.style.overflow = "hidden";
     return () => { document.body.style.overflow = ""; };
   }, []);
- 
+
   return (
     <div
       className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center animate-fade-in"
@@ -465,7 +465,7 @@ function Lightbox({
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
- 
+
       {/* Image + info */}
       <div
         className="relative max-w-5xl w-full mx-16 sm:mx-24 text-center"
@@ -486,7 +486,7 @@ function Lightbox({
           </p>
         </div>
       </div>
- 
+
       {/* Next */}
       <button
         onClick={(e) => { e.stopPropagation(); onNav(1); }}
@@ -495,7 +495,7 @@ function Lightbox({
       >
         <ChevronRight className="w-6 h-6" />
       </button>
- 
+
       {/* Close */}
       <button
         onClick={onClose}
@@ -507,7 +507,7 @@ function Lightbox({
     </div>
   );
 }
- 
+
 // ─── PRODUCT CARD ─────────────────────────────────────────────────────────────
 function ProductCard({
   product,
@@ -533,9 +533,9 @@ function ProductCard({
             loading="lazy"
           />
           {product.soldOut && (
-                <div className="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded pointer-events-none">
-                  Sold Out
-                </div>
+            <div className="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded pointer-events-none">
+              Sold Out
+            </div>
           )}
           {/* Hover overlay */}
           <div className="absolute inset-0 bg-secondary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -544,7 +544,7 @@ function ProductCard({
             </div>
           </div>
         </div>
- 
+
         {/* Name + description */}
         <div className="p-4">
           <h3 className="font-serif text-base font-semibold text-foreground group-hover:text-primary transition-colors">
@@ -560,7 +560,7 @@ function ProductCard({
     </ScrollReveal>
   );
 }
- 
+
 // ─── EMPTY STATE ──────────────────────────────────────────────────────────────
 function EmptyState({ categoryName }: { categoryName: string }) {
   return (
@@ -585,21 +585,21 @@ function EmptyState({ categoryName }: { categoryName: string }) {
     </div>
   );
 }
- 
+
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
 export default function CategoryPage() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
- 
+
   const category = CATEGORIES.find((c) => c.slug === slug);
   const products: Product[] = slug ? (PRODUCTS[slug] ?? []) : [];
- 
+
   // Redirect to /products if slug is unknown
   useEffect(() => {
     if (!category) navigate("/products", { replace: true });
   }, [category, navigate]);
- 
+
   const handleNav = useCallback(
     (dir: number) => {
       setLightboxIdx((prev) => {
@@ -612,9 +612,9 @@ export default function CategoryPage() {
     },
     [products.length]
   );
- 
+
   if (!category) return null;
- 
+
   return (
     <>
       {lightboxIdx !== null && products.length > 0 && (
@@ -625,7 +625,7 @@ export default function CategoryPage() {
           onNav={handleNav}
         />
       )}
- 
+
       {/* ── Hero banner ── */}
       <section className="relative bg-secondary overflow-hidden">
         <div
@@ -633,7 +633,7 @@ export default function CategoryPage() {
           style={{ backgroundImage: `url(${category.coverImage})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-secondary/60" />
- 
+
         <div className="container relative z-10 py-20">
           {/* Breadcrumb */}
           <Link
@@ -643,7 +643,7 @@ export default function CategoryPage() {
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             All Collections
           </Link>
- 
+
           <div className="max-w-2xl">
             <span className="inline-block gold-gradient text-primary-foreground text-xs font-bold tracking-widest uppercase px-3 py-1 rounded mb-5">
               {category.tag}
@@ -654,7 +654,7 @@ export default function CategoryPage() {
             <p className="text-secondary-foreground/70 leading-relaxed mb-6">
               {category.description}
             </p>
- 
+
             {/* Spec pills */}
             <div className="flex flex-wrap gap-2">
               {category.specs.map((spec) => (
@@ -669,10 +669,10 @@ export default function CategoryPage() {
           </div>
         </div>
       </section>
- 
+
       {/* Gold divider */}
       <div className="h-px gold-gradient opacity-40" />
- 
+
       {/* ── Product grid ── */}
       <section className="py-24 bg-background">
         <div className="container">
@@ -693,7 +693,7 @@ export default function CategoryPage() {
                   Request Pricing →
                 </Link>
               </div>
- 
+
               {/* Grid */}
               <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-4">
                 {products.map((product, i) => (
@@ -709,7 +709,7 @@ export default function CategoryPage() {
           )}
         </div>
       </section>
- 
+
       {/* ── Bottom CTA ── */}
       <section className="py-16 bg-secondary">
         <div className="container">
@@ -720,7 +720,7 @@ export default function CategoryPage() {
               </h2>
               <p className="text-secondary-foreground/70 text-sm leading-relaxed mb-8">
                 Contact us for pricing, availability, and a free consultation. Pickup available at
-                our Columbus, Ohio facility.
+                our Boston, Massachusetts facility.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link
@@ -740,7 +740,7 @@ export default function CategoryPage() {
           </ScrollReveal>
         </div>
       </section>
- 
+
       {/* Sticky pricing button */}
       <div className="fixed bottom-6 right-6 z-40">
         <Link
@@ -753,4 +753,3 @@ export default function CategoryPage() {
     </>
   );
 }
- 

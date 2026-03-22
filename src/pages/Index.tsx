@@ -8,7 +8,7 @@ const FEATURES = [
   {
     icon: Building2,
     title: "Luxury Marble Appearance",
-    desc: "Our panels deliver a high‑end marble look with realistic veining and premium finishes — perfect for modern interiors throughout Columbus, Ohio.",
+    desc: "Our panels deliver a high‑end marble look with realistic veining and premium finishes — perfect for modern interiors throughout Boston, Massachusetts.",
   },
   {
     icon: Droplets,
@@ -62,7 +62,7 @@ export default function Index() {
       <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-secondary">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${HERO_IMAGE})` }}
+          style={{ backgroundImage: `url(/hero-luxury.jpg)` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 via-secondary/80 to-secondary/40" />
         <div className="container relative z-10 py-20">
@@ -72,7 +72,7 @@ export default function Index() {
               <span className="block text-gold-gradient">Wall Panels</span>
             </h1>
             <p className="text-lg sm:text-xl text-secondary-foreground/80 leading-relaxed mb-10 font-light">
-              "Durable, waterproof luxury marble PVC wall panels, designed to elevate any residential or commercial space in Columbus, Ohio."
+              "Durable, waterproof luxury marble PVC wall panels, designed to elevate any residential or commercial space in Boston, Massachusetts."
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -105,10 +105,10 @@ export default function Index() {
       <div className="text-center max-w-3xl mx-auto mb-16">
         <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">What We Offer</p>
         <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
-          We Offer Marble PVC Wall Panels, WPC sheets, Stone Pu & Mirrors in Columbus, Ohio
+          We Offer Marble PVC Wall Panels, WPC sheets, Stone Pu & Mirrors in Boston, Massachusetts
         </h2>
         <p className="text-muted-foreground leading-relaxed">
-          Decor Emperor specializes in premium marble PVC wall panels and WPVC sheets for homes and businesses across Columbus, Ohio. We provide durable, waterproof, low‑maintenance wall solutions ideal for bathrooms, kitchens, basements, and feature walls.
+          ZHaus Design specializes in premium marble PVC wall panels and WPVC sheets for homes and businesses across Boston, Massachusetts. We provide durable, waterproof, low‑maintenance wall solutions ideal for bathrooms, kitchens, basements, and feature walls.
         </p>
       </div>
     </ScrollReveal>
@@ -190,24 +190,110 @@ export default function Index() {
 </section>
 
       {/* Why Choose */}
-      <section className="py-24 bg-secondary">
+      <section className="py-32 bg-background relative overflow-hidden">
         <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            <div className="lg:col-span-4 lg:sticky lg:top-32">
+              <ScrollReveal>
+                <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-4">Why Choose Us</p>
+                <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8">
+                  Why Choose<br/>ZHaus Design
+                </h2>
+                <div className="w-24 h-px bg-primary mb-8" />
+              </ScrollReveal>
+            </div>
+            <div className="lg:col-span-8 flex flex-col gap-12 sm:gap-16 mt-12 lg:mt-0">
+              {FEATURES.map((f, i) => (
+                <ScrollReveal key={f.title} delay={i * 50}>
+                  <div className="flex flex-col sm:flex-row items-start gap-6 sm:gap-10 border-t border-border/50 pt-12 group">
+                    <div className="relative flex-shrink-0">
+                      <div className="absolute inset-0 bg-primary/10 rounded-full scale-150 group-hover:scale-[2] transition-transform duration-500 opacity-0 group-hover:opacity-100" />
+                      <f.icon className="w-10 h-10 text-primary relative z-10" strokeWidth={1.5} />
+                    </div>
+                    <div>
+                      <h3 className="font-serif text-2xl font-semibold text-foreground mb-4 group-hover:text-primary transition-colors">{f.title}</h3>
+                      <p className="text-muted-foreground text-sm sm:text-base leading-relaxed font-light max-w-2xl">{f.desc}</p>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Panel Specifications */}
+      <section className="relative py-32 bg-foreground text-background overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary rounded-full blur-3xl -translate-x-1/2 translate-y-1/2" />
+        </div>
+        <div className="container relative z-10">
           <ScrollReveal>
-            <div className="text-center mb-16">
-              <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">Why Choose Us</p>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-secondary-foreground">
-                Why Choose Decor Emperor
-              </h2>
+            <div className="max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16">
+              <div className="text-center lg:text-left">
+                <h2 className="font-serif text-3xl sm:text-4xl text-primary font-light mb-4">
+                  Panel Specifications
+                </h2>
+                <p className="text-background/80 text-sm sm:text-base leading-relaxed font-light max-w-sm mx-auto lg:mx-0">
+                  Broad coverage and a premium, high‑end feel suitable for both residential and commercial spaces.
+                </p>
+              </div>
+              
+              <div className="flex items-center justify-center gap-8 sm:gap-16">
+                <div className="text-center transform hover:scale-105 transition-transform duration-500">
+                  <p className="text-6xl sm:text-8xl font-serif font-light text-background tracking-tighter">9<span className="text-3xl sm:text-5xl text-primary ml-2">×</span>4</p>
+                  <p className="text-primary tracking-[0.2em] text-xs uppercase mt-6 opacity-80">Feet (Panel Size)</p>
+                </div>
+                <div className="w-px h-32 bg-background/20 hidden sm:block rotate-12" />
+                <div className="text-center transform hover:scale-105 transition-transform duration-500">
+                  <p className="text-6xl sm:text-8xl font-serif font-light text-background tracking-tighter">8<span className="text-2xl sm:text-4xl text-primary ml-3 font-sans opacity-70">mm</span></p>
+                  <p className="text-primary tracking-[0.2em] text-xs uppercase mt-6 opacity-80">Thickness</p>
+                </div>
+              </div>
             </div>
           </ScrollReveal>
+        </div>
+      </section>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {FEATURES.map((f, i) => (
-              <ScrollReveal key={f.title} delay={i * 100}>
-                <div className="bg-secondary-foreground/5 border border-secondary-foreground/10 rounded-lg p-8 hover:border-primary/50 transition-colors group h-full">
-                  <f.icon className="w-10 h-10 text-primary mb-5 group-hover:scale-110 transition-transform" />
-                  <h3 className="font-serif text-lg font-bold text-secondary-foreground mb-3">{f.title}</h3>
-                  <p className="text-secondary-foreground/70 text-sm leading-relaxed">{f.desc}</p>
+      {/* Recent Installations */}
+      <section className="py-32 bg-secondary">
+        <div className="container">
+          <div className="flex flex-col md:flex-row items-end justify-between mb-20 gap-8">
+            <ScrollReveal>
+              <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-4">Our Work</p>
+              <h2 className="font-serif text-4xl sm:text-5xl font-bold text-secondary-foreground">
+                Recent Installations
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal delay={100}>
+              <Link
+                to="/gallery"
+                className="inline-flex items-center gap-3 text-secondary-foreground hover:text-primary transition-colors font-medium tracking-widest uppercase text-xs"
+              >
+                View Full Gallery <span className="w-12 h-px bg-current" />
+              </Link>
+            </ScrollReveal>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {INSTALLATION_IMAGES.slice(0, 3).map((img, i) => (
+              <ScrollReveal 
+                key={i} 
+                delay={i * 200}
+                className={
+                  i === 0 ? "lg:col-span-7 lg:col-start-1" :
+                  i === 1 ? "lg:col-span-4 lg:col-start-9 lg:-mt-32" :
+                  "lg:col-span-6 lg:col-start-4 lg:mt-24"
+                }
+              >
+                <div className="group overflow-hidden">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full h-[50vh] sm:h-[60vh] object-cover hover:scale-105 transition-transform duration-700 ease-out"
+                    loading="lazy"
+                  />
                 </div>
               </ScrollReveal>
             ))}
@@ -215,95 +301,25 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Panel Specs */}
-      <section className="py-20 bg-background">
-        <div className="container">
-          <ScrollReveal>
-            <div className="gold-gradient rounded-xl p-12 sm:p-16 text-center">
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-primary-foreground mb-4">
-                Panel Specifications
-              </h2>
-              <div className="flex flex-wrap justify-center gap-12 mt-8">
-                <div>
-                  <p className="text-5xl font-serif font-bold text-primary-foreground">9 × 4</p>
-                  <p className="text-primary-foreground/80 text-sm mt-2 uppercase tracking-wide">Feet (Panel Size)</p>
-                </div>
-                <div className="w-px bg-primary-foreground/30 hidden sm:block" />
-                <div>
-                  <p className="text-5xl font-serif font-bold text-primary-foreground">8 mm</p>
-                  <p className="text-primary-foreground/80 text-sm mt-2 uppercase tracking-wide">Thickness</p>
-                </div>
-              </div>
-              <p className="text-primary-foreground/80 mt-8 max-w-xl mx-auto text-sm leading-relaxed">
-                Broad coverage and a premium, high‑end feel suitable for both residential and commercial spaces.
-              </p>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Recent Installations */}
-      <section className="py-24 bg-secondary">
-        <div className="container">
-          <ScrollReveal>
-            <div className="text-center mb-12">
-              <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">Our Work</p>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-secondary-foreground">
-                Recent Installations
-              </h2>
-            </div>
-          </ScrollReveal>
-
-          <div
-            ref={carouselRef}
-            className="flex gap-6 overflow-x-auto pb-4 cursor-grab snap-x snap-mandatory scrollbar-hide"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={handleMouseUp}
-            onMouseLeave={handleMouseUp}
-          >
-            {INSTALLATION_IMAGES.map((img, i) => (
-              <div key={i} className="flex-shrink-0 w-72 sm:w-80 snap-center">
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full h-96 object-cover rounded-lg hover:scale-[1.02] transition-transform duration-300"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-8">
-            <Link
-              to="/gallery"
-              className="inline-flex gold-gradient text-primary-foreground px-8 py-3 font-semibold text-sm tracking-wide uppercase rounded hover:opacity-90 transition-opacity"
-            >
-              More Images
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Shipping Teaser */}
-      <section className="py-20 bg-background">
+      <section className="py-40 bg-background flex flex-col items-center justify-center text-center">
         <div className="container">
           <ScrollReveal>
-            <div className="bg-card border border-border rounded-xl p-12 text-center max-w-2xl mx-auto">
-              <h2 className="font-serif text-2xl font-bold text-foreground mb-4">
-                Shipping & Pickup Policy
-              </h2>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                At Decor Emperor, we currently offer pickup only from our facility in Columbus, Ohio to ensure product integrity and customer satisfaction.
-              </p>
-              <Link
-                to="/shipping"
-                className="text-primary font-semibold text-sm tracking-wide uppercase hover:opacity-80 transition-opacity"
-              >
-                View Full Policy →
-              </Link>
-            </div>
+            <div className="w-px h-24 bg-primary mx-auto mb-12" />
+            <h2 className="font-serif text-3xl sm:text-4xl font-light text-foreground mb-8">
+              Shipping & Pickup Policy
+            </h2>
+            <p className="text-muted-foreground leading-relaxed max-w-xl mx-auto mb-12 font-light">
+              At ZHaus Design, we currently offer pickup only from our facility in Boston, Massachusetts to ensure product integrity and customer satisfaction.
+            </p>
+            <Link
+              to="/shipping"
+              className="group inline-flex items-center gap-4 text-primary font-semibold text-xs tracking-[0.2em] uppercase hover:opacity-80 transition-opacity"
+            >
+              <span className="w-8 h-px bg-primary group-hover:w-16 transition-all duration-300" />
+              View Full Policy
+              <span className="w-8 h-px bg-primary group-hover:w-16 transition-all duration-300" />
+            </Link>
           </ScrollReveal>
         </div>
       </section>
