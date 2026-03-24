@@ -11,6 +11,7 @@ interface Product {
   image: string;
   description?: string;
   soldOut?: boolean;
+  comingSoon?: boolean;
 }
 
 type ProductMap = Record<string, Product[]>;
@@ -32,393 +33,389 @@ const PRODUCTS: ProductMap = {
     // ── ADD YOUR MARBLE PVC PRODUCTS HERE ──
     {
       id: "mp-1",
-      name: "Marbel-1",
+      name: "2826",
       image: "https://i.postimg.cc/DzBSXjpd/IMG-2826-(1).jpg",
       //description: "hi there how are u"
-      // soldOut: true, // ← add this line to mark as sold out
+     // soldOut: true, // ← add this line to mark as sold out
     },
     {
       id: "mp-2",
-      name: "MB-2",
+      name: "2827",
       image:
-        "https://i.postimg.cc/brXSyGBq/IMG-2827.jpg",
-      // soldOut: true,
+        "https://i.postimg.cc/gk2MMQD5/2827.jpg",
+     soldOut: true,
     },
     {
       id: "mp-3",
-      name: "MB-3",
+      name: "2829",
       image:
-        "https://i.postimg.cc/RVLJmZQZ/IMG-2828.jpg",
+        "https://i.postimg.cc/CxWmx1Vt/2829.jpg",
+        soldOut: true,
     },
     {
       id: "mp-4",
-      name: "MB-4",
+      name: "2831",
       image:
-        "https://i.postimg.cc/bJRfJW62/IMG-2829.jpg",
+        "https://i.postimg.cc/gjSKFcDr/2831.jpg",
+        soldOut: true,
     },
     {
       id: "mp-5",
-      name: "MB-5",
+      name: "2832",
       image:
-        "https://i.postimg.cc/WbyLhM7J/IMG-2830.jpg",
+        "https://i.postimg.cc/ZYVHyjSL/2832.jpg",
+        soldOut: true,
     },
     {
       id: "mp-6",
-      name: "MB-6",
+      name: "2833",
       image:
-        "https://i.postimg.cc/ThMV4N6r/IMG-2831.jpg",
+        "https://i.postimg.cc/2SB7MDBq/2833.jpg",
+        soldOut: true,
     },
     {
       id: "mp-7",
-      name: "MB-7",
+      name: "2834",
       image:
-        "https://i.postimg.cc/ht0YVTLH/IMG-2832.jpg",
+        "https://i.postimg.cc/G2zFG36K/2834.jpg",
+        soldOut: true,
     },
     {
       id: "mp-8",
-      name: "MB-8",
+      name: "3255",
       image:
-        "https://i.postimg.cc/C1nJrq8Y/IMG-2833.jpg",
+        "https://i.postimg.cc/ZnM6s7bv/3255.jpg",
     },
     {
       id: "mp-9",
-      name: "MB-9",
+      name: "3256",
       image:
-        "https://i.postimg.cc/VkPzVMHX/IMG-2834.jpg",
+        "https://i.postimg.cc/HLgXN7gz/3256.jpg",
     },
     {
       id: "mp-10",
-      name: "MB-10",
+      name: "8081",
       image:
-        "https://i.postimg.cc/SsR4MGJF/IMG-2858.jpg",
+        "https://i.postimg.cc/SsZ9jTzv/8081.jpg",
+        comingSoon: true,
     },
     {
       id: "mp-11",
-      name: "MB-11",
+      name: "8087 2A Matt",
       image:
-        "https://i.postimg.cc/1XNZW5GW/IMG-2860.jpg",
+        "https://i.postimg.cc/WpHrvyVG/8087-2A-Matt.jpg",
+        comingSoon: true,
     },
     {
       id: "mp-12",
-      name: "MB-12",
+      name: "80138",
       image:
-        "https://i.postimg.cc/DyLS0796/IMG-3255.jpg",
+        "https://i.postimg.cc/63Q2sr1f/80138.jpg",
+        comingSoon: true,
     },
     {
       id: "mp-13",
-      name: "MB-13",
+      name: "80139",
       image:
-        "https://i.postimg.cc/ht0h8pP4/IMG-3256.jpg",
+        "https://i.postimg.cc/C53zfWMJ/80139.jpg",
+        comingSoon: true,
     },
     {
       id: "mp-14",
-      name: "MB-14",
+      name: "80798",
       image:
-        "https://i.postimg.cc/PqrJSYPy/IMG-3262.jpg",
+        "https://i.postimg.cc/W1PdpLHX/80798.png",
+        comingSoon: true,
     },
     {
       id: "mp-15",
-      name: "MB-15",
+      name: "Black Gold 1",
       image:
-        "https://i.postimg.cc/cJ9H2CnV/IMG-3273.jpg",
+        "https://i.postimg.cc/FKr1cbmK/Black-Gold.jpg",
     },
     {
       id: "mp-16",
-      name: "MB-16",
+      name: "Black Gold 2",
       image:
-        "https://i.postimg.cc/xCBdjZtS/IMG-3673.jpg",
+        "https://i.postimg.cc/RF80jjt7/Black-Gold-2.jpg",
     },
     {
       id: "mp-17",
-      name: "MB-17",
+      name: "Blue Gold",
       image:
-        "https://i.postimg.cc/sfZXHVDH/IMG-3674.jpg",
+        "https://i.postimg.cc/fWJB4Fpt/Blue-Gold.jpg",
+       // soldOut: true,
     },
     {
       id: "mp-18",
-      name: "MB-18",
+      name: "Green Gold",
       image:
-        "https://i.postimg.cc/pXbdggmX/IMG-3676.jpg",
+        "https://i.postimg.cc/28WGyWzm/Green-Gold.jpg",
     },
     {
       id: "mp-19",
-      name: "MB-19",
+      name: "KBJ1-8038",
       image:
-        "https://i.postimg.cc/TYMPZZKr/IMG-3677.jpg",
+        "https://i.postimg.cc/tgqNBmFC/KBJ1-8038.jpg",
+        comingSoon: true,
     },
-    {
+     {
       id: "mp-20",
-      name: "MB-20",
+      name: "KBJ1-8056",
       image:
-        "https://i.postimg.cc/c4RJZX3D/IMG-3678.jpg",
+        "https://i.postimg.cc/1Rk0kzDg/KBJ1-8056.jpg",
     },
-    {
+     {
       id: "mp-21",
-      name: "MB-21",
+      name: "KBJ1-8077",
       image:
-        "https://i.postimg.cc/qMs70jn0/IMG-3679.jpg",
+        "https://i.postimg.cc/NjY60PJL/KBJ1-8077.jpg",
+        comingSoon: true,
     },
-    {
+     {
       id: "mp-22",
-      name: "MB-22",
+      name: "KBJ1-8056",
       image:
-        "https://i.postimg.cc/CxwxKkH1/IMG-3680.jpg",
+        "https://i.postimg.cc/1Rk0kzDg/KBJ1-8056.jpg",
+        comingSoon: true,
     },
-    {
+     {
       id: "mp-23",
-      name: "MB-23",
+      name: "KBJ1-8077",
       image:
-        "https://i.postimg.cc/0QK84fxW/IMG-3682.jpg",
-
+        "https://i.postimg.cc/NjY60PJL/KBJ1-8077.jpg",
+        comingSoon: true,
+     
     },
-    {
+     {
       id: "mp-24",
-      name: "MB-24",
+      name: "KBJ1-8080",
       image:
-        "https://i.postimg.cc/PJmdX5Cd/IMG-3683.jpg",
-
+        "https://i.postimg.cc/T3CD325k/KBJ1-8080.jpg",
+        comingSoon: true,
+     
     },
-    {
+     {
       id: "mp-25",
-      name: "MB-25",
+      name: "KBJ1-8090",
       image:
-        "https://i.postimg.cc/VvjzfkJt/IMG-3684.jpg",
-
+        "https://i.postimg.cc/QMzKc6bP/KBJ1-8090.jpg",
+        comingSoon: true,
+      
     },
-    {
+     {
       id: "mp-26",
-      name: "MB-26",
+      name: "KBJ1 80116",
       image:
-        "https://i.postimg.cc/fLVLNs7m/IMG-3672.jpg",
+        "https://i.postimg.cc/wMXt89dC/KBJ1-80116.jpg",
+        comingSoon: true,
+    
+    },
+     
+     {
+      id: "mp-27",
+      name: "KBJ-8086",
+      image:
+        "https://i.postimg.cc/wB17xXpg/KBJ-8086.jpg",
+        comingSoon: true,
 
+    
     },
 
   ],
-
-  "wpvc": [
+ 
+  "wpc": [
     // ── ADD YOUR WPVC PRODUCTS HERE ──
     {
       id: "wp-1",
-      name: "WPVC Interior Panel",
+      name: "WPC ",
       image:
         "https://i.postimg.cc/9FfsWBrx/71442e2570b19f85c5f9f3232f972cdd.jpg",
     },
     {
       id: "wp-2",
-      name: "WPVC Living Space",
+      name: "WPC ",
       image:
-        "https://i.postimg.cc/jd93R0pB/IMG-2753.jpg",
-
+        "https://i.postimg.cc/dVDwyNPD/12.jpg",
+      
     },
     {
       id: "wp-3",
-      name: "WPVC Commercial",
+      name: "WPC",
       image:
         "https://i.postimg.cc/d0R5R7Lz/IMG-2757.jpg",
-
+      
     },
-    {
+     {
       id: "wp-4",
-      name: "WPVC Commercial",
+      name: "WPC ",
       image:
-        "https://i.postimg.cc/hvYs4T5m/IMG-2782.jpg",
-
+        "https://i.postimg.cc/LXFpGHqh/13.jpg",
+      
     },
-    {
+     {
       id: "wp-5",
-      name: "WPVC Commercial",
+      name: "WPC ",
       image:
         "https://i.postimg.cc/7Yp9p178/IMG-2783.jpg",
-
+      
     },
-    {
+     {
       id: "wp-6",
-      name: "WPVC Commercial",
+      name: "WPC ",
       image:
-        "https://i.postimg.cc/PqH4qt2g/IMG-2787.jpg",
-
+        "https://i.postimg.cc/ZK5hGsqW/15.jpg",
+      
     },
-    {
+     {
       id: "wp-7",
-      name: "WPVC Commercial",
+      name: "WPC ",
       image:
         "https://i.postimg.cc/4yYv0nx3/IMG-2844.jpg",
-
+      
     },
-    {
+     {
       id: "wp-8",
-      name: "WPVC Commercial",
+      name: "WPC",
       image:
         "https://i.postimg.cc/nrNKfZXg/IMG-3141.jpg",
-
+      
     },
-    {
+     {
       id: "wp-9",
-      name: "WPVC Commercial",
+      name: "WPC",
       image:
-        "https://i.postimg.cc/rFtCCdHb/IMG-3142.jpg",
-
+        "https://i.postimg.cc/cLVy8sBT/16.jpg",
+      
     },
-    {
-      id: "wp-10",
-      name: "WPVC Commercial",
-      image:
-        "https://i.postimg.cc/GhsJJBNc/IMG-3143.jpg",
 
-    },
-    {
-      id: "wp-11",
-      name: "WPVC Commercial",
-      image:
-        "https://i.postimg.cc/Nj66S3BS/IMG-3224.jpg",
-
-    },
-    {
-      id: "wp-12",
-      name: "WPVC Commercial",
-      image:
-        "https://i.postimg.cc/zfpnXTLf/IMG-3225.jpg",
-
-    },
-    {
-      id: "wp-13",
-      name: "WPVC Commercial",
-      image:
-        "https://i.postimg.cc/j5FPyK40/IMG-3226.jpg",
-
-    },
-    {
-      id: "wp-14",
-      name: "WPVC Commercial",
-      image:
-        "https://i.postimg.cc/Znv3cgwB/IMG-3227.jpg",
-
-    },
+  
     {
       id: "wp-15",
-      name: "WPC Commercial",
+      name: "WPC ",
       image:
         "https://i.postimg.cc/tRsmw4fz/IMG-3388.jpg",
-
+      
     },
     {
       id: "wp-16",
-      name: "WPC Commercial",
+      name: "WPC ",
       image:
         "https://i.postimg.cc/25j0wkhL/IMG-3757.jpg",
-
+      
     },
-
+      
   ],
-
+ 
   "mirror": [
     // ── ADD YOUR MIRROR PRODUCTS HERE ──
+   {
+    id: "mir-1",
+    name: "Mirror 1",
+    image: "https://i.postimg.cc/MKD1qhnM/IMG-3743.jpg",
+      
+   },
     {
-      id: "mir-1",
-      name: "Full-Length Mirror Panel",
-      image: "https://i.postimg.cc/MKD1qhnM/IMG-3743.jpg",
-
-    },
+    id: "mir-1",
+    name: "FMirror 2",
+    image: "https://i.postimg.cc/tgV1Zf4P/IMG-3744.jpg",
+     
+   },
     {
-      id: "mir-1",
-      name: "Full-Length Mirror Panel",
-      image: "https://i.postimg.cc/tgV1Zf4P/IMG-3744.jpg",
-
-    },
+    id: "mir-1",
+    name: "Mirror 3",
+    image: "https://i.postimg.cc/g21jWDHV/IMG-3748-(1).jpg",
+     
+   },
     {
-      id: "mir-1",
-      name: "Full-Length Mirror Panel",
-      image: "https://i.postimg.cc/g21jWDHV/IMG-3748-(1).jpg",
-
-    },
+    id: "mir-1",
+    name: "Mirror 4",
+    image: "https://i.postimg.cc/GtM3SJp0/IMG-3749.jpg",
+      
+   },
     {
-      id: "mir-1",
-      name: "Full-Length Mirror Panel",
-      image: "https://i.postimg.cc/GtM3SJp0/IMG-3749.jpg",
-
-    },
-    {
-      id: "mir-1",
-      name: "Full-Length Mirror Panel",
-      image: "https://i.postimg.cc/zXBGHMdw/IMG-3750.jpg",
-
-    },
+    id: "mir-1",
+    name: "Mirror 5",
+    image: "https://i.postimg.cc/zXBGHMdw/IMG-3750.jpg",
+      
+   },
   ],
-
+ 
   "stone-sheets": [
     // ── ADD YOUR STONE SHEET PRODUCTS HERE ──
     {
-      id: "st-1",
-      name: "Stone Sheet — Style 1",
+      id: "PU",
+      name: "PU Stone",
       image:
         "https://static.wixstatic.com/media/8e3244_78da4fe422da432f80cbbe70bb69efdf~mv2.jpeg",
     },
     {
       id: "st-2",
-      name: "Stone Sheet — Style 2",
+      name: "PU Stone",
       image:
         "https://static.wixstatic.com/media/8e3244_284be8d806414bf58d56e7ce33171129~mv2.jpeg",
     },
     {
       id: "st-3",
-      name: "Stone Sheet — Style 3",
+      name: "PU Stone",
       image:
         "https://static.wixstatic.com/media/8e3244_140b213877a7408da5e9e708b2fced44~mv2.jpeg",
     },
     {
       id: "st-4",
-      name: "Stone Sheet — Style 4",
+      name: "PU Stone",
       image:
         "https://static.wixstatic.com/media/8e3244_7f0d33cf85cc4fd59874b853eccad91c~mv2.jpeg",
     },
     {
       id: "st-5",
-      name: "Stone Sheet — Style 5",
+      name: "PU Stone",
       image:
         "https://static.wixstatic.com/media/8e3244_497fbce5b9ea4d2eb619bce3be4d2447~mv2.jpeg",
     },
     {
       id: "st-6",
-      name: "Stone Sheet — Style 6",
+      name: "PU Stone",
       image:
         "https://static.wixstatic.com/media/8e3244_28fe8f82ecd949c6abb39c2ad2fab06e~mv2.jpeg",
     },
-    {
+      {
       id: "st-7",
-      name: "Stone Sheet — Style 7",
+      name: "PU Stone",
       image:
         "https://i.postimg.cc/mk3pb89z/IMG-3745.jpg",
     },
-    {
+      {
       id: "st-8",
-      name: "Stone Sheet — Style 8",
+      name: "PU Stone",
       image:
         "https://i.postimg.cc/CLNrXrYk/IMG-3754.jpg",
     },
-    {
+      {
       id: "st-9",
-      name: "Stone Sheet — Style 9",
+      name: "PU Stone",
       image:
         "https://i.postimg.cc/vZ2qH14b/IMG-3756.jpg",
     },
-    {
+      {
       id: "st-10",
-      name: "Stone Sheet — Style 10",
+      name: "PU Stone",
       image:
         "https://i.postimg.cc/N0WdmW7f/IMG-3787.jpg",
     },
-    {
+     {
       id: "st-11",
-      name: "Stone Sheet — Style 11",
+      name: "PU Stone",
       image:
         "https://i.postimg.cc/0jvZHDBV/IMG-3790.jpg",
     },
-    {
+     {
       id: "st-12",
-      name: "Stone Sheet — Style 12",
+      name: "PU Stone",
       image:
         "https://i.postimg.cc/d39nMDMc/IMG-3791.jpg",
     },
+
 
   ],
 };

@@ -62,7 +62,9 @@ export default function Index() {
       <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-secondary">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(/hero-luxury.jpg)` }}
+          style={{ backgroundImage: `url(${HERO_IMAGE})` }}
+
+          //
         />
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 via-secondary/80 to-secondary/40" />
         <div className="container relative z-10 py-20">
@@ -115,66 +117,67 @@ export default function Index() {
 
           <ScrollReveal delay={200}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {/* Marble PVC */}
-              <div className="group relative overflow-hidden rounded-lg">
-                <img
-                  src="https://i.postimg.cc/DzBSXjpd/IMG-2826-(1).jpg"
-                  alt="Marble PVC Wall Panels"
-                  className="w-full h-80 object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">
-                    Marble PVC Panels
-                  </h3>
-                </div>
-              </div>
+               {/* Marble PVC */}
+        <div className="group relative overflow-hidden rounded-lg">
+          <img
+            src="https://i.postimg.cc/76d6Sdnn/marble-main-page.jpg"
+            alt="Marble PVC Wall Panels"
+            className="w-full h-80 object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
+            <h3 className="font-serif text-xl font-bold text-secondary-foreground">
+              Marble PVC Panels 
+            </h3>
+          </div>
+        </div>
 
-              {/* WPVC */}
-              <div className="group relative overflow-hidden rounded-lg">
-                <img
-                  src="https://i.postimg.cc/9FfsWBrx/71442e2570b19f85c5f9f3232f972cdd.jpg"
-                  alt="WPVC Decorative Sheets"
-                  className="w-full h-80 object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">
-                    WPVC Decorative Sheets
-                  </h3>
-                </div>
-              </div>
+        {/* WPC */}
+        <div className="group relative overflow-hidden rounded-lg">
+          <img
+            src="https://i.postimg.cc/s2XJvCNJ/wpvc-for-main-page.jpg"
+            alt="WPC Decorative Sheets"
+            className="w-full h-80 object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
+            <h3 className="font-serif text-xl font-bold text-secondary-foreground">
+              WPC Wood Decorative Sheets
+            </h3>
+          </div>
+        </div>
 
-              {/* Mirror Panels */}
-              <div className="group relative overflow-hidden rounded-lg">
-                <img
-                  src="https://i.postimg.cc/MKD1qhnM/IMG-3743.jpg"
-                  alt="Mirror Panels"
-                  className="w-full h-80 object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">
-                    Mirror Panels
-                  </h3>
-                </div>
-              </div>
+        {/* Mirror Panels */}
+        <div className="group relative overflow-hidden rounded-lg">
+          <img
+            src="https://i.postimg.cc/pLX0n6Gg/mirror-for-main-page.jpg"
+            alt="Mirror "
+            className="w-full h-80 object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
+            <h3 className="font-serif text-xl font-bold text-secondary-foreground">
+              Mirror 
+            </h3>
+          </div>
+        </div>
 
-              {/* Stone Sheets */}
-              <div className="group relative overflow-hidden rounded-lg">
-                <img
-                  src="https://i.postimg.cc/mk3pb89z/IMG-3745.jpg"
-                  alt="Wall Stone Sheets"
-                  className="w-full h-80 object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">
-                    Wall Stone Sheets
-                  </h3>
-                </div>
-              </div>
-            </div>
+        {/* Stone Sheets */}
+        <div className="group relative overflow-hidden rounded-lg">
+          <img
+            src="https://i.postimg.cc/Vv8gsG0G/Stone-Panles-for-main-page.jpg"
+            alt="PU Wall Stone Sheets"
+            className="w-full h-80 object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
+            <h3 className="font-serif text-xl font-bold text-secondary-foreground">
+             PU Wall Stone Sheets
+            </h3>
+          </div>
+        </div>
+      </div>
+
 
             {/* Explore button */}
             <div className="text-center mt-10">

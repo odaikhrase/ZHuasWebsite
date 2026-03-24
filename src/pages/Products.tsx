@@ -18,42 +18,42 @@ export interface Category {
 // Edit name, description, tag, specs, and coverImage for each category.
 // The `slug` must match the route: /products/:slug
 export const CATEGORIES: Category[] = [
-  {
+{
     slug: "marble-pvc",
     name: "Marble PVC Wall Panels",
     tag: "Bestseller",
     coverImage:
-      "https://i.postimg.cc/DzBSXjpd/IMG-2826-(1).jpg",
+      "https://i.postimg.cc/76d6Sdnn/marble-main-page.jpg", // to change the main image of the section.
     description:
       "Premium marble-finish PVC panels. Waterproof, low-maintenance, 9 ft × 4 ft, 8 mm thick. Perfect for bathrooms, kitchens, basements and feature walls.",
     specs: ["9 ft × 4 ft", "8 mm thick", "Waterproof", "Tongue & Groove"],
   },
   {
-    slug: "wpvc",
-    name: "WPVC Decorative Panels",
+    slug: "wpc",
+    name: "WPC Decorative wood Panels",
     tag: "New",
     coverImage:
-      "https://i.postimg.cc/9FfsWBrx/71442e2570b19f85c5f9f3232f972cdd.jpg",
+      "https://i.postimg.cc/s2XJvCNJ/wpvc-for-main-page.jpg",
     description:
       "Wood-plastic composite strength fused with PVC durability. Modern, stylish solution for walls, ceilings and feature designs with excellent rigidity.",
     specs: ["Wood-Plastic Composite", "Walls & Ceilings", "High Rigidity", "Long-Lasting"],
   },
   {
     slug: "mirror",
-    name: "Mirror Panels",
-    tag: "Premium",
+    name: "Mirror ",
+    tag: "new",
     coverImage:
-      "https://i.postimg.cc/MKD1qhnM/IMG-3743.jpg",
+      "https://i.postimg.cc/pLX0n6Gg/mirror-for-main-page.jpg",
     description:
       "Elegant mirror panel solutions that add depth, light and a luxury feel to any room — residential or commercial.",
     specs: ["Interior Use", "Various Sizes", "Custom Cut", "Elegant Finish"],
   },
   {
     slug: "stone-sheets",
-    name: "Wall Stone Sheets",
+    name: "PU Wall Stone Sheets", 
     tag: "Natural Look",
     coverImage:
-      "https://i.postimg.cc/mk3pb89z/IMG-3745.jpg",
+      "https://i.postimg.cc/Vv8gsG0G/Stone-Panles-for-main-page.jpg",
     description:
       "Realistic stone-texture wall sheets for a natural, organic aesthetic. Durable and easy to install — transforms any wall into a striking focal point.",
     specs: ["Stone Texture", "Lightweight", "Easy Install", "Indoor Use"],
