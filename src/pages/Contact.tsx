@@ -11,14 +11,29 @@ export default function Contact() {
   const [form, setForm] = useState({ firstName: "", lastName: "", email: "", phone: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.email || !form.message) {
       toast({ title: "Please fill in required fields", variant: "destructive" });
       return;
     }
-    setSubmitted(true);
-    toast({ title: "Message sent!", description: "We'll respond within 24 hours during business days." });
+    const response = await fetch("https://formspree.io/f/xwvrgqqn", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        firstName: form.firstName,
+        lastName: form.lastName,
+        email: form.email,
+        phone: form.phone,
+        message: form.message,
+      }),
+    });
+    if (response.ok) {
+      setSubmitted(true);
+      toast({ title: "Message sent!", description: "We'll respond within 24 hours during business days." });
+    } else {
+      toast({ title: "Something went wrong. Please try again.", variant: "destructive" });
+    }
   };
 
   return (
