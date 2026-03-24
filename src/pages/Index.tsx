@@ -98,96 +98,96 @@ export default function Index() {
         </div>
       </section>
 
-     {/* What We Offer */}
-<section className="py-24 bg-background">
-  <div className="container">
-    <ScrollReveal>
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">What We Offer</p>
-        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
-          We Offer Marble PVC Wall Panels, WPC sheets, Stone Pu & Mirrors in Boston, Massachusetts
-        </h2>
-        <p className="text-muted-foreground leading-relaxed">
-          ZHaus Design specializes in premium marble PVC wall panels and WPVC sheets for homes and businesses across Boston, Massachusetts. We provide durable, waterproof, low‑maintenance wall solutions ideal for bathrooms, kitchens, basements, and feature walls.
-        </p>
-      </div>
-    </ScrollReveal>
+      {/* What We Offer */}
+      <section className="py-24 bg-background">
+        <div className="container">
+          <ScrollReveal>
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">What We Offer</p>
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                We Offer Marble PVC Wall Panels, WPC sheets, Stone Pu & Mirrors in Boston, Massachusetts
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                ZHaus Design specializes in premium marble PVC wall panels and WPVC sheets for homes and businesses across Boston, Massachusetts. We provide durable, waterproof, low‑maintenance wall solutions ideal for bathrooms, kitchens, basements, and feature walls.
+              </p>
+            </div>
+          </ScrollReveal>
 
-    <ScrollReveal delay={200}>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        {/* Marble PVC */}
-        <div className="group relative overflow-hidden rounded-lg">
-          <img
-            src="https://i.postimg.cc/DzBSXjpd/IMG-2826-(1).jpg"
-            alt="Marble PVC Wall Panels"
-            className="w-full h-80 object-cover"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-            <h3 className="font-serif text-xl font-bold text-secondary-foreground">
-              Marble PVC Panels
-            </h3>
-          </div>
+          <ScrollReveal delay={200}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {/* Marble PVC */}
+              <div className="group relative overflow-hidden rounded-lg">
+                <img
+                  src="https://i.postimg.cc/DzBSXjpd/IMG-2826-(1).jpg"
+                  alt="Marble PVC Wall Panels"
+                  className="w-full h-80 object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
+                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">
+                    Marble PVC Panels
+                  </h3>
+                </div>
+              </div>
+
+              {/* WPVC */}
+              <div className="group relative overflow-hidden rounded-lg">
+                <img
+                  src="https://i.postimg.cc/9FfsWBrx/71442e2570b19f85c5f9f3232f972cdd.jpg"
+                  alt="WPVC Decorative Sheets"
+                  className="w-full h-80 object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
+                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">
+                    WPVC Decorative Sheets
+                  </h3>
+                </div>
+              </div>
+
+              {/* Mirror Panels */}
+              <div className="group relative overflow-hidden rounded-lg">
+                <img
+                  src="https://i.postimg.cc/MKD1qhnM/IMG-3743.jpg"
+                  alt="Mirror Panels"
+                  className="w-full h-80 object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
+                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">
+                    Mirror Panels
+                  </h3>
+                </div>
+              </div>
+
+              {/* Stone Sheets */}
+              <div className="group relative overflow-hidden rounded-lg">
+                <img
+                  src="https://i.postimg.cc/mk3pb89z/IMG-3745.jpg"
+                  alt="Wall Stone Sheets"
+                  className="w-full h-80 object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
+                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">
+                    Wall Stone Sheets
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            {/* Explore button */}
+            <div className="text-center mt-10">
+              <Link
+                to="/products"
+                className="inline-flex gold-gradient text-black px-10 py-3.5 font-semibold text-sm tracking-wide uppercase rounded hover:opacity-90 transition-opacity"
+              >
+                Explore Our Products
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
-
-        {/* WPVC */}
-        <div className="group relative overflow-hidden rounded-lg">
-          <img
-            src="https://i.postimg.cc/9FfsWBrx/71442e2570b19f85c5f9f3232f972cdd.jpg"
-            alt="WPVC Decorative Sheets"
-            className="w-full h-80 object-cover"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-            <h3 className="font-serif text-xl font-bold text-secondary-foreground">
-              WPVC Decorative Sheets
-            </h3>
-          </div>
-        </div>
-
-        {/* Mirror Panels */}
-        <div className="group relative overflow-hidden rounded-lg">
-          <img
-            src="https://i.postimg.cc/MKD1qhnM/IMG-3743.jpg"
-            alt="Mirror Panels"
-            className="w-full h-80 object-cover"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-            <h3 className="font-serif text-xl font-bold text-secondary-foreground">
-              Mirror Panels
-            </h3>
-          </div>
-        </div>
-
-        {/* Stone Sheets */}
-        <div className="group relative overflow-hidden rounded-lg">
-          <img
-            src="https://i.postimg.cc/mk3pb89z/IMG-3745.jpg"
-            alt="Wall Stone Sheets"
-            className="w-full h-80 object-cover"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-            <h3 className="font-serif text-xl font-bold text-secondary-foreground">
-              Wall Stone Sheets
-            </h3>
-          </div>
-        </div>
-      </div>
-
-      {/* Explore button */}
-      <div className="text-center mt-10">
-        <Link
-          to="/products"
-          className="inline-flex gold-gradient text-black px-10 py-3.5 font-semibold text-sm tracking-wide uppercase rounded hover:opacity-90 transition-opacity"
-        >
-          Explore Our Products
-        </Link>
-      </div>
-    </ScrollReveal>
-  </div>
-</section>
+      </section>
 
       {/* Why Choose */}
       <section className="py-32 bg-background relative overflow-hidden">
@@ -197,7 +197,7 @@ export default function Index() {
               <ScrollReveal>
                 <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-4">Why Choose Us</p>
                 <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8">
-                  Why Choose<br/>ZHaus Design
+                  Why Choose<br />ZHaus Design
                 </h2>
                 <div className="w-24 h-px bg-primary mb-8" />
               </ScrollReveal>
@@ -239,7 +239,7 @@ export default function Index() {
                   Broad coverage and a premium, high‑end feel suitable for both residential and commercial spaces.
                 </p>
               </div>
-              
+
               <div className="flex items-center justify-center gap-8 sm:gap-16">
                 <div className="text-center transform hover:scale-105 transition-transform duration-500">
                   <p className="text-6xl sm:text-8xl font-serif font-light text-background tracking-tighter">9<span className="text-3xl sm:text-5xl text-primary ml-2">×</span>4</p>
@@ -278,13 +278,13 @@ export default function Index() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {INSTALLATION_IMAGES.slice(0, 3).map((img, i) => (
-              <ScrollReveal 
-                key={i} 
+              <ScrollReveal
+                key={i}
                 delay={i * 200}
                 className={
                   i === 0 ? "lg:col-span-7 lg:col-start-1" :
-                  i === 1 ? "lg:col-span-4 lg:col-start-9 lg:-mt-32" :
-                  "lg:col-span-6 lg:col-start-4 lg:mt-24"
+                    i === 1 ? "lg:col-span-4 lg:col-start-9 lg:-mt-32" :
+                      "lg:col-span-6 lg:col-start-4 lg:mt-24"
                 }
               >
                 <div className="group overflow-hidden">
