@@ -5,144 +5,105 @@ export const MARBLE_PVC_MAIN = "https://static.wixstatic.com/media/8e3244_b88be5
 export const WPVC_MAIN = "https://static.wixstatic.com/media/8e3244_6fe6e4e35dfd460499496e59f277d7d1~mv2.jpg/v1/fill/w_623,h_446,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/A7b1f5f7bc68446ebaa13e1faaaefdf55B.jpg";
 
 export const INSTALLATION_IMAGES = [
-  {
-    src: "https://static.wixstatic.com/media/8e3244_d036c68bbea54df6bdddfc0c81081bd2~mv2.jpeg/v1/fill/w_736,h_948,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_d036c68bbea54df6bdddfc0c81081bd2~mv2.jpeg",
-    alt: "Waterproof luxury marble PVC wall panels installed in a Boston, Massachusetts bathroom",
-  },
-  {
-    src: "https://static.wixstatic.com/media/8e3244_9ca264925e2e48cc9212617a5a544291~mv2.jpeg/v1/fill/w_1000,h_1537,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_9ca264925e2e48cc9212617a5a544291~mv2.jpeg",
-    alt: "Waterproof luxury marble PVC wall panels installed in a Boston, Massachusetts bathroom",
-  },
-  {
-    src: "https://static.wixstatic.com/media/8e3244_aeac7f2d361844119458e399e0c9a749~mv2.jpeg/v1/fill/w_1000,h_1159,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_aeac7f2d361844119458e399e0c9a749~mv2.jpeg",
-    alt: "Waterproof luxury marble PVC wall panels installed in a Boston, Massachusetts bathroom",
-  },
-  {
-    src: "https://static.wixstatic.com/media/8e3244_d58a7b2efda24ba48429bc789eec4048~mv2.jpeg/v1/fill/w_1000,h_1237,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_d58a7b2efda24ba48429bc789eec4048~mv2.jpeg",
-    alt: "Luxury marble PVC wall panels installed in a modern living room in Boston, Massachusetts",
-  },
-  {
-    src: "https://static.wixstatic.com/media/8e3244_70e4334ce6ee49a2afd1409833ee2812~mv2.jpeg/v1/fill/w_736,h_948,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_70e4334ce6ee49a2afd1409833ee2812~mv2.jpeg",
-    alt: "Waterproof luxury marble PVC wall panels installed in a Boston, Massachusetts bathroom",
-  },
-  {
-    src: "https://static.wixstatic.com/media/8e3244_2f47d1a3fe5c4b5293977170a66fb311~mv2.jpeg/v1/fill/w_576,h_751,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_2f47d1a3fe5c4b5293977170a66fb311~mv2.jpeg",
-    alt: "Luxury marble PVC wall panels installed in a modern living room in Boston, Massachusetts",
-  },
-  {
-    src: "https://static.wixstatic.com/media/8e3244_b78970fa73db4b96b4a1fd0358f77650~mv2.jpeg/v1/fill/w_1000,h_1333,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_b78970fa73db4b96b4a1fd0358f77650~mv2.jpeg",
-    alt: "Luxury marble PVC wall panels installed in a modern living room in Boston, Massachusetts",
-  },
-  {
-    src: "https://static.wixstatic.com/media/8e3244_5626acd865b54603838f1712c8dcaa94~mv2.jpeg/v1/fill/w_1000,h_750,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_5626acd865b54603838f1712c8dcaa94~mv2.jpeg",
-    alt: "Luxury marble PVC wall panels installed in a Boston, Massachusetts commercial space",
-  },
+ 
 ];
 
 export const GALLERY_IMAGES = [
   ...INSTALLATION_IMAGES,
   {
-    src: "https://static.wixstatic.com/media/8e3244_06feb7291acf4205be45145925bbab75~mv2.jpeg/v1/fill/w_1000,h_1333,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_06feb7291acf4205be45145925bbab75~mv2.jpeg",
+    src: "https://i.postimg.cc/7YrfkkzL/IMG-3812.jpg",
     alt: "Marble PVC wall panel installation",
   },
   {
-    src: "https://static.wixstatic.com/media/8e3244_a47f69d0511243bebd12c87ba17f2c7b~mv2.jpg/v1/fill/w_1000,h_1333,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_a47f69d0511243bebd12c87ba17f2c7b~mv2.jpg",
+    src: "https://i.postimg.cc/VLtLGHHQ/IMG-3782.jpg",
+    alt: "Marble PVC wall panel installation",
+  },
+   {
+    src: "https://i.postimg.cc/ZYdC2RCC/IMG-3774.jpg",
+    alt: "Marble PVC wall panel installation",
+  },
+   {
+    src: "https://i.postimg.cc/sgwX7GNR/temp-image-6AA7FBD4-E19A-4F79-9150-69860FFC9645.jpg",
     alt: "Marble PVC wall panel installation",
   },
   {
-    src: "https://static.wixstatic.com/media/8e3244_c420649133a140f8b8279a9a2b83bad3~mv2.jpg/v1/fill/w_1000,h_461,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_c420649133a140f8b8279a9a2b83bad3~mv2.jpg",
+    src: "https://i.postimg.cc/FK6Hn5mr/IMG-3813.jpg",
     alt: "Marble PVC wall panel installation",
   },
-    // Repeated image for testing gallery layout with more images
-
-  {
-    src: "https://i.postimg.cc/14hKPKfY/image1.jpg",
+   {
+    src: "https://i.postimg.cc/j2Hq5DfS/8e3bf11ecb43b7b3574f53d31151a04f.jpg",
     alt: "Marble PVC wall panel installation",
   },
-  {
-    src: "https://i.postimg.cc/HLsRfpG2/image2.jpg",
+   {
+    src: "https://i.postimg.cc/HkZYVDrn/IMG-2713.jpg",
     alt: "Marble PVC wall panel installation",
   },
   {
-    src: "https://i.postimg.cc/W1SfmQDG/image3.jpg",
+    src: "https://i.postimg.cc/mrPb9X9q/2a569538-d942-401c-9157-493f128949d0.jpg",
     alt: "Marble PVC wall panel installation",
   },
   {
-    src: "https://i.postimg.cc/prDsm7bt/image4.jpg",
+    src: "https://i.postimg.cc/GtxrRZ0d/0590f406-4544-4b4a-8074-0ec929df31e4.jpg",
     alt: "Marble PVC wall panel installation",
   },
   {
-    src: "https://i.postimg.cc/3JTLsKmX/image5.jpg",
+    src: "https://i.postimg.cc/vHXMNFL1/IMG-2840.jpg",
     alt: "Marble PVC wall panel installation",
-  },// Repeated image for testing gallery layout with more images
-  {
-    src: "https://static.wixstatic.com/media/8e3244_bf1ea7106c2c4c8aa9c39bcade3718c6~mv2.jpg/v1/fill/w_1000,h_1333,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_bf1ea7106c2c4c8aa9c39bcade3718c6~mv2.jpg",
+  },
+   {
+    src: "https://i.postimg.cc/y8bK7mGT/IMG-2838.jpg",
     alt: "Marble PVC wall panel installation",
   },
   {
-    src: "https://static.wixstatic.com/media/8e3244_f60c588ba636424e895b3c7ee9569755~mv2.jpeg/v1/fill/w_1000,h_1333,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_f60c588ba636424e895b3c7ee9569755~mv2.jpeg",
+    src: "https://i.postimg.cc/B6WGKq46/0174fd64fe58e3ab2ce5eb8cf8b515de.jpg",
     alt: "Marble PVC wall panel installation",
   },
   {
-    src: "https://static.wixstatic.com/media/8e3244_76f7256c858740329fecf0941089bcec~mv2.jpg/v1/fill/w_1000,h_461,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_76f7256c858740329fecf0941089bcec~mv2.jpg",
+    src: "https://i.postimg.cc/fTHnv7Mh/IMG-2843.jpg",
     alt: "Marble PVC wall panel installation",
   },
   {
-    src: "https://static.wixstatic.com/media/8e3244_5ccd011dd7c34cac989784e4db9286dd~mv2.jpg/v1/fill/w_1000,h_1333,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_5ccd011dd7c34cac989784e4db9286dd~mv2.jpg",
+    src: "https://i.postimg.cc/8C62DqWY/temp-image-348EFFE0-E9A7-449D-AB11-E5DBDF709AE7.jpg",
     alt: "Marble PVC wall panel installation",
   },
-   // Repeated image for testing gallery layout with more images
-
-  {
-    src: "https://i.postimg.cc/dVQ5045z/image6.jpg",
+   {
+    src: "https://i.postimg.cc/sgwX7GNR/temp-image-6AA7FBD4-E19A-4F79-9150-69860FFC9645.jpg",
     alt: "Marble PVC wall panel installation",
   },
-  {
-    src: "https://i.postimg.cc/cLDXtwjm/image7.jpg",
+   {
+    src: "https://i.postimg.cc/VLtLGHHQ/IMG-3782.jpg",
     alt: "Marble PVC wall panel installation",
   },
-  {
-    src: "https://i.postimg.cc/TPF0CGTn/image8.jpg",
+ {
+    src: "https://i.postimg.cc/HsvRMp9F/IMG-3784.jpg",
     alt: "Marble PVC wall panel installation",
   },
-  {
-    src: "https://i.postimg.cc/pTjZS7ds/image9.jpg",
+   {
+    src: "https://i.postimg.cc/nh6Wd05W/IMG-3810.jpg",
     alt: "Marble PVC wall panel installation",
   },
-  {
-    src: "https://i.postimg.cc/j2rXYXwr/image11.jpg",
+   {
+    src: "https://i.postimg.cc/1tf5ps8z/03-24-03.jpg",
     alt: "Marble PVC wall panel installation",
   },
   {
-    src: "https://i.postimg.cc/C5H4hqkw/image12.jpg",
-    alt: "Marble PVC wall panel installation",
-  },// Repeated image for testing gallery layout with more images
-  {
-    src: "https://static.wixstatic.com/media/8e3244_0ac4df53cac04fbcb7b8a75ffb7060be~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_0ac4df53cac04fbcb7b8a75ffb7060be~mv2.jpg",
+    src: "https://i.postimg.cc/HLPTWR6T/03-24-04.jpg",
     alt: "Marble PVC wall panel installation",
   },
   {
-    src: "https://static.wixstatic.com/media/8e3244_f9036c8772a84eacbfe06d75f9f71238~mv2.jpg/v1/fill/w_1000,h_882,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_f9036c8772a84eacbfe06d75f9f71238~mv2.jpg",
+    src: "https://i.postimg.cc/br1PTJpn/03-24-05.jpg",
     alt: "Marble PVC wall panel installation",
   },
   {
-    src: "https://static.wixstatic.com/media/8e3244_37fd051cf598436f811be29d30605ebb~mv2.jpg/v1/fill/w_1000,h_1500,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_37fd051cf598436f811be29d30605ebb~mv2.jpg",
+    src: "https://i.postimg.cc/BQG4vxBc/03-24-06.jpg",
     alt: "Marble PVC wall panel installation",
   },
   {
-    src: "https://static.wixstatic.com/media/8e3244_74a9c844c3b64d429a3f527b97b3f12b~mv2.jpg/v1/fill/w_1000,h_1333,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_74a9c844c3b64d429a3f527b97b3f12b~mv2.jpg",
+    src: "https://i.postimg.cc/Qd8DQhP9/3-24-1.jpg",
     alt: "Marble PVC wall panel installation",
   },
   {
-    src: "https://static.wixstatic.com/media/8e3244_7debb30b882047f481d7b1da9a3324c9~mv2.avif/v1/fill/w_1000,h_750,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_7debb30b882047f481d7b1da9a3324c9~mv2.avif",
-    alt: "Marble PVC wall panel installation",
-  },
-  {
-    src: "https://static.wixstatic.com/media/8e3244_939e5d5199fc4f59bed1b71c4573e38a~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_939e5d5199fc4f59bed1b71c4573e38a~mv2.jpg",
-    alt: "Marble PVC wall panel installation",
-  },
-  {
-    src: "https://static.wixstatic.com/media/8e3244_c420649133a140f8b8279a9a2b83bad3~mv2.jpg/v1/fill/w_1000,h_461,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8e3244_c420649133a140f8b8279a9a2b83bad3~mv2.jpg",
+    src: "https://i.postimg.cc/W3kcN3Dr/3-24-02.jpg",
     alt: "Marble PVC wall panel installation",
   },
 

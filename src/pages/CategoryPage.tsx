@@ -36,49 +36,50 @@ const PRODUCTS: ProductMap = {
       name: "2826",
       image: "https://i.postimg.cc/DzBSXjpd/IMG-2826-(1).jpg",
       //description: "hi there how are u"
-     // soldOut: true, // ← add this line to mark as sold out
+     //   // ← add this line to mark as sold out
     },
+
     {
       id: "mp-2",
       name: "2827",
       image:
         "https://i.postimg.cc/gk2MMQD5/2827.jpg",
-     soldOut: true,
+      
     },
     {
       id: "mp-3",
       name: "2829",
       image:
         "https://i.postimg.cc/CxWmx1Vt/2829.jpg",
-        soldOut: true,
+         
     },
     {
       id: "mp-4",
       name: "2831",
       image:
         "https://i.postimg.cc/gjSKFcDr/2831.jpg",
-        soldOut: true,
+         
     },
     {
       id: "mp-5",
       name: "2832",
       image:
         "https://i.postimg.cc/ZYVHyjSL/2832.jpg",
-        soldOut: true,
+         
     },
     {
       id: "mp-6",
       name: "2833",
       image:
         "https://i.postimg.cc/2SB7MDBq/2833.jpg",
-        soldOut: true,
+         
     },
     {
       id: "mp-7",
       name: "2834",
       image:
         "https://i.postimg.cc/G2zFG36K/2834.jpg",
-        soldOut: true,
+         
     },
     {
       id: "mp-8",
@@ -144,7 +145,7 @@ const PRODUCTS: ProductMap = {
       name: "Blue Gold",
       image:
         "https://i.postimg.cc/fWJB4Fpt/Blue-Gold.jpg",
-       // soldOut: true,
+       //  
     },
     {
       id: "mp-18",
@@ -304,6 +305,48 @@ const PRODUCTS: ProductMap = {
         "https://i.postimg.cc/25j0wkhL/IMG-3757.jpg",
       
     },
+    {
+      id: "wp-16",
+      name: "WPC ",
+      image:
+        "https://i.postimg.cc/CMBWkzx4/3-24-1.jpg",
+      
+    },
+    {
+      id: "wp-16",
+      name: "WPC ",
+      image:
+        "https://i.postimg.cc/3xnLPTx6/3-24-2.jpg",
+      
+    },
+    {
+      id: "wp-16",
+      name: "WPC ",
+      image:
+        "https://i.postimg.cc/TwWCL5Jn/3-24-3.jpg",
+      
+    },
+    {
+      id: "wp-16",
+      name: "WPC ",
+      image:
+        "https://i.postimg.cc/qvMwc5Gd/3-24-4.jpg",
+      
+    },
+    {
+      id: "wp-16",
+      name: "WPC ",
+      image:
+        "https://i.postimg.cc/mZYyvsXg/3-24-5.jpg",
+      
+    },
+    {
+      id: "wp-16",
+      name: "WPC ",
+      image:
+        "https://i.postimg.cc/P5xbv8tH/3-24-6.jpg",
+      
+    },
       
   ],
  
@@ -415,7 +458,6 @@ const PRODUCTS: ProductMap = {
       image:
         "https://i.postimg.cc/d39nMDMc/IMG-3791.jpg",
     },
-
 
   ],
 };
