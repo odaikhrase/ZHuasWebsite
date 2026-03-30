@@ -132,6 +132,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
+            <img src="https://i.postimg.cc/ydNv59bh/Whats-App-Image-2026-03-29-at-7-52-17-PM.jpg" alt="ZHaus Design" className="h-10 w-12 object-cover rounded" />
             <h3 className="font-serif text-2xl font-bold mb-4">ZHAUS DESIGN</h3>
             <p className="text-secondary-foreground/70 leading-relaxed text-sm">
               ZHaus Design specializes in high-end interior design, premium marble PVC wall panels, and WPVC sheets for homes and businesses across Boston, Massachusetts.
@@ -172,6 +173,7 @@ function Footer() {
                 </a>
               </p>
               <p>
+                
                 <span className="text-secondary-foreground font-medium">Business:</span>{" "}
                 ZHaus Design
               </p>
