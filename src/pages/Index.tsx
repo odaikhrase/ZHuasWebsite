@@ -75,17 +75,17 @@ export default function Index() {
               "Durable, waterproof luxury marble PVC wall panels, designed to elevate any residential or commercial space in Boston, Massachusetts."
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link
-                to="/gallery"
-                className="gold-gradient text-black px-8 py-3.5 font-semibold text-sm tracking-wide uppercase rounded hover:opacity-90 transition-opacity"
+            <Link
+                to="/products/marble-pvc"
+                className="gold-gradient text-primary-foreground px-8 py-3.5 font-semibold text-sm tracking-wide uppercase rounded hover:opacity-90 transition-opacity"
               >
-                Explore Marble PVC Panels
+                Explore our Marbel
               </Link>
               <Link
                 to="/products#wpvc"
                 className="border-2 border-primary text-primary px-8 py-3.5 font-semibold text-sm tracking-wide uppercase rounded hover:bg-primary hover:text-primary-foreground transition-colors"
               >
-                Explore WPVC Sheets
+                Explore other products
               </Link>
             </div>
             <Link
