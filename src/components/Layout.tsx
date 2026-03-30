@@ -45,11 +45,12 @@ function Header() {
       {/* Main nav */}
       <nav className="bg-background/95 backdrop-blur-md border-b border-border">
         <div className="container flex items-center justify-between py-4">
-          <Link to="/" className="flex items-center gap-3 group" onClick={() => setOpen(false)}>
-            <span className="font-serif text-2xl font-bold tracking-wide text-foreground group-hover:text-primary transition-colors">
-              ZHAUS DESIGN
-            </span>
-          </Link>
+        <Link to="/" className="flex items-center gap-3 group" onClick={() => setOpen(false)}>
+        <img src="https://i.postimg.cc/ydNv59bh/Whats-App-Image-2026-03-29-at-7-52-17-PM.jpg" alt="ZHaus Design" className="h-10 w-12 object-cover rounded" />
+  <span className="font-serif text-base sm:text-xl lg:text-2xl font-bold tracking-wide text-foreground group-hover:text-primary transition-colors">
+    ZHAUS DESIGN
+  </span>
+</Link>
 
           {/* Desktop nav */}
           <ul className="hidden lg:flex items-center gap-8">
