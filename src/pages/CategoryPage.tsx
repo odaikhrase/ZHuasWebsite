@@ -222,6 +222,24 @@ const PRODUCTS: ProductMap = {
 
     
     },
+    {
+      id: "mp-28",
+      name: "Mirror Silver ",
+      image:
+        "https://i.postimg.cc/v8q3ZYBq/Mirror-Silver.jpg",
+        //comingSoon: true,
+
+    
+    },
+     {
+      id: "mp-29",
+      name: "Mirror Gold ",
+      image:
+        "https://i.postimg.cc/mgwjzCyB/Mirror-Gold.jpg",
+        //comingSoon: true,
+
+    
+    },
 
   ],
  
@@ -342,12 +360,18 @@ const PRODUCTS: ProductMap = {
     },
     {
       id: "wp-16",
-      name: "WPC ",
+      name: "Trims ",
       image:
         "https://i.postimg.cc/P5xbv8tH/3-24-6.jpg",
       
     },
+       {
+      id: "wp-16",
+      name: "Trims ",
+      image:
+        "https://i.postimg.cc/dVqXxqWZ/3-24-1.jpg",
       
+    },
   ],
  
   "mirror": [
@@ -360,7 +384,7 @@ const PRODUCTS: ProductMap = {
    },
     {
     id: "mir-1",
-    name: "FMirror 2",
+    name: "Mirror 2",
     image: "https://i.postimg.cc/tgV1Zf4P/IMG-3744.jpg",
      
    },

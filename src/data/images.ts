@@ -127,6 +127,10 @@ export const GALLERY_IMAGES = [
     src: "https://i.postimg.cc/W3kcN3Dr/3-24-02.jpg",
     alt: "Marble PVC wall panel installation",
   },
+   {
+    src: "https://i.postimg.cc/MGhJ4CMm/IMG-2792.jpg",
+    alt: "Marble PVC wall panel installation",
+  },
 
 
 ];
