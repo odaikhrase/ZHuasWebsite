@@ -21,7 +21,7 @@ function Header() {
       <div className="bg-secondary text-secondary-foreground">
         <div className="container flex items-center justify-between py-2 text-sm">
           <span className="hidden sm:inline font-sans text-secondary-foreground/80">
-            Premium Marble PVC & WPVC Wall Panels — Boston, Massachusetts
+            Premium Marble PVC & WPC Wall Panels — Boston, Massachusetts
           </span>
           <div className="flex items-center gap-4 ml-auto">
             <a
@@ -135,7 +135,7 @@ function Footer() {
             <img src="https://i.postimg.cc/ydNv59bh/Whats-App-Image-2026-03-29-at-7-52-17-PM.jpg" alt="ZHaus Design" className="h-10 w-12 object-cover rounded" />
             <h3 className="font-serif text-2xl font-bold mb-4">ZHAUS DESIGN</h3>
             <p className="text-secondary-foreground/70 leading-relaxed text-sm">
-              ZHaus Design specializes in high-end interior design, premium marble PVC wall panels, and WPVC sheets for homes and businesses across Boston, Massachusetts.
+              Zhaus Design offers thoughtfully curated products that elevate everyday spaces. We focus on modern, functional pieces that bring style, character, and a distinct edge to every space.
             </p>
           </div>
 

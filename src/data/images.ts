@@ -31,6 +31,15 @@ export const INSTALLATION_IMAGES = [
 
 export const GALLERY_IMAGES = [
   ...INSTALLATION_IMAGES,
+ 
+  {
+    src: "https://i.postimg.cc/cJsT4YMb/IMG-0107.png",
+    alt: "Marble PVC wall panel installation",
+  },
+  {
+    src: "https://i.postimg.cc/Nj8rMzpV/IMG-0106.png",
+    alt: "Marble PVC wall panel installation",
+  },
   {
     src: "https://i.postimg.cc/7YrfkkzL/IMG-3812.jpg",
     alt: "Marble PVC wall panel installation",
@@ -49,6 +58,10 @@ export const GALLERY_IMAGES = [
   },
   {
     src: "https://i.postimg.cc/FK6Hn5mr/IMG-3813.jpg",
+    alt: "Marble PVC wall panel installation",
+  },
+  {
+    src: "https://i.postimg.cc/Xv2VsRVz/IMG-0108.png",
     alt: "Marble PVC wall panel installation",
   },
    {
@@ -131,6 +144,72 @@ export const GALLERY_IMAGES = [
     src: "https://i.postimg.cc/MGhJ4CMm/IMG-2792.jpg",
     alt: "Marble PVC wall panel installation",
   },
-
-
+  {
+    src: "https://i.postimg.cc/FzSNs1j5/IMG-0109.png",
+    alt: "Marble PVC wall panel installation",
+  },
+  {
+    src: "https://i.postimg.cc/JzMMMrtH/IMG-0110.png",
+    alt: "Marble PVC wall panel installation",
+  },
+  {
+    src: "https://i.postimg.cc/rm0LQzZz/IMG-0111.png",
+    alt: "Marble PVC wall panel installation",
+  },
+  {
+    src: "https://i.postimg.cc/BQGGBSTN/IMG-0112.png",
+    alt: "Marble PVC wall panel installation",
+  },
+  {
+    src: "https://i.postimg.cc/XYsSW9Tq/IMG-0113.png",
+    alt: "Marble PVC wall panel installation",
+  },
+   {
+    src: "https://i.postimg.cc/YSP5GM2q/IMG-0114.png",
+    alt: "Marble PVC wall panel installation",
+  },
+{
+    src: "https://i.postimg.cc/C1fWbXzp/IMG-0115.png",
+    alt: "Marble PVC wall panel installation",
+  },
+{
+    src: "https://i.postimg.cc/RVmjnPmJ/IMG-0116.png",
+    alt: "Marble PVC wall panel installation",
+  },
+  {
+    src: "https://i.postimg.cc/TYcBjrYP/IMG-0117.png",
+    alt: "Marble PVC wall panel installation",
+  },
+   {
+    src: "https://i.postimg.cc/R0W8zy14/IMG-0118.png",
+    alt: "Marble PVC wall panel installation",
+  },
+  
+   {
+    src: "https://i.postimg.cc/RC7Y9ctM/IMG-0120.png",
+    alt: "Marble PVC wall panel installation",
+  },
+{
+    src: "https://i.postimg.cc/Y0MbjsFN/IMG-0121.png",
+    alt: "Marble PVC wall panel installation",
+  },
+  {
+    src: "https://i.postimg.cc/QxNf3vsq/IMG-0122.png",
+    alt: "Marble PVC wall panel installation",
+  },
+  {
+    src: "https://i.postimg.cc/ZqNcHSF6/IMG-0125.png",
+    alt: "Marble PVC wall panel installation",
+  },
+   {
+    src: "https://i.postimg.cc/8cpmTr8w/IMG-0123.png",
+    alt: "Marble PVC wall panel installation",
+  },
+   {
+    src: "https://i.postimg.cc/tRkz2DPL/IMG-0126.png",
+    alt: "Marble PVC wall panel installation",
+  }, {
+    src: "https://i.postimg.cc/YCGf2HPZ/IMG-3928.png",
+    alt: "Marble PVC wall panel installation",
+  },
 ];
