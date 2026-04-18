@@ -379,31 +379,31 @@ const PRODUCTS: ProductMap = {
    {
     id: "mir-1",
     name: "Mirror 1",
-    image: "https://i.postimg.cc/MKD1qhnM/IMG-3743.jpg",
+    image: "https://i.postimg.cc/y8Tf3LbD/1.jpg",
       
    },
     {
     id: "mir-1",
     name: "Mirror 2",
-    image: "https://i.postimg.cc/tgV1Zf4P/IMG-3744.jpg",
+    image: "https://i.postimg.cc/9F51833R/2.jpg",
      
    },
     {
     id: "mir-1",
     name: "Mirror 3",
-    image: "https://i.postimg.cc/g21jWDHV/IMG-3748-(1).jpg",
+    image: "https://i.postimg.cc/5NBgDP1h/3.jpg",
      
    },
     {
     id: "mir-1",
     name: "Mirror 4",
-    image: "https://i.postimg.cc/GtM3SJp0/IMG-3749.jpg",
+    image: "https://i.postimg.cc/Z5jc5CWv/4.jpg",
       
    },
     {
     id: "mir-1",
     name: "Mirror 5",
-    image: "https://i.postimg.cc/zXBGHMdw/IMG-3750.jpg",
+    image: "https://i.postimg.cc/mrDSzB9w/5.jpg",
       
    },
   ],
