@@ -249,78 +249,78 @@ const PRODUCTS: ProductMap = {
       id: "wp-1",
       name: "WPC ",
       image:
-        "https://i.postimg.cc/9FfsWBrx/71442e2570b19f85c5f9f3232f972cdd.jpg",
+        "https://i.postimg.cc/tgjjpvVY/1.jpg",
     },
     {
       id: "wp-2",
       name: "WPC ",
       image:
-        "https://i.postimg.cc/dVDwyNPD/12.jpg",
+        "https://i.postimg.cc/qRBHCtL9/2.jpg",
       
     },
     {
       id: "wp-3",
       name: "WPC",
       image:
-        "https://i.postimg.cc/d0R5R7Lz/IMG-2757.jpg",
+        "https://i.postimg.cc/G35nHmyR/3.jpg",
       
     },
      {
       id: "wp-4",
       name: "WPC ",
       image:
-        "https://i.postimg.cc/LXFpGHqh/13.jpg",
+        "https://i.postimg.cc/9Q33YgbZ/4.jpg",
       
     },
      {
       id: "wp-5",
       name: "WPC ",
       image:
-        "https://i.postimg.cc/7Yp9p178/IMG-2783.jpg",
+        "https://i.postimg.cc/Qdc24gnj/5.jpg",
       
     },
      {
       id: "wp-6",
       name: "WPC ",
       image:
-        "https://i.postimg.cc/ZK5hGsqW/15.jpg",
+        "https://i.postimg.cc/k59kkVkD/6.jpg",
       
     },
      {
       id: "wp-7",
       name: "WPC ",
       image:
-        "https://i.postimg.cc/4yYv0nx3/IMG-2844.jpg",
+        "https://i.postimg.cc/B6nRnrZ9/7.jpg",
       
     },
      {
       id: "wp-8",
       name: "WPC",
       image:
-        "https://i.postimg.cc/nrNKfZXg/IMG-3141.jpg",
+        "https://i.postimg.cc/sXHqQT1p/8.jpg",
       
     },
      {
       id: "wp-9",
       name: "WPC",
       image:
-        "https://i.postimg.cc/cLVy8sBT/16.jpg",
+        "https://i.postimg.cc/x8k7KLz2/9.jpg",
       
     },
 
   
     {
-      id: "wp-15",
+      id: "wp-10",
       name: "WPC ",
       image:
-        "https://i.postimg.cc/tRsmw4fz/IMG-3388.jpg",
+        "https://i.postimg.cc/FsL8zgvG/10.jpg",
       
     },
     {
-      id: "wp-16",
+      id: "wp-11",
       name: "WPC ",
       image:
-        "https://i.postimg.cc/25j0wkhL/IMG-3757.jpg",
+        "https://i.postimg.cc/t4dctqYP/11.jpg",
       
     },
     {
