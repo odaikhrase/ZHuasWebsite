@@ -323,20 +323,8 @@ const PRODUCTS: ProductMap = {
         "https://i.postimg.cc/t4dctqYP/11.jpg",
       
     },
-    {
-      id: "wp-16",
-      name: "WPC ",
-      image:
-        "https://i.postimg.cc/CMBWkzx4/3-24-1.jpg",
-      
-    },
-    {
-      id: "wp-16",
-      name: "WPC ",
-      image:
-        "https://i.postimg.cc/3xnLPTx6/3-24-2.jpg",
-      
-    },
+
+   
     {
       id: "wp-16",
       name: "WPC ",
