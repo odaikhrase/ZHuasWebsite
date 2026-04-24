@@ -35,6 +35,8 @@ const PRODUCTS: ProductMap = {
       id: "mp-1",
       name: "2826",
       image: "https://i.postimg.cc/DzBSXjpd/IMG-2826-(1).jpg",
+             soldOut: true,
+
       //description: "hi there how are u"
      //   // ← add this line to mark as sold out
     },
@@ -44,6 +46,9 @@ const PRODUCTS: ProductMap = {
       name: "2827",
       image:
         "https://i.postimg.cc/gk2MMQD5/2827.jpg",
+                    
+
+
       
     },
     {
@@ -51,6 +56,8 @@ const PRODUCTS: ProductMap = {
       name: "2829",
       image:
         "https://i.postimg.cc/CxWmx1Vt/2829.jpg",
+        
+        
          
     },
     {
@@ -58,6 +65,8 @@ const PRODUCTS: ProductMap = {
       name: "2831",
       image:
         "https://i.postimg.cc/gjSKFcDr/2831.jpg",
+               soldOut: true,
+
          
     },
     {
@@ -65,6 +74,8 @@ const PRODUCTS: ProductMap = {
       name: "2832",
       image:
         "https://i.postimg.cc/ZYVHyjSL/2832.jpg",
+               soldOut: true,
+
          
     },
     {
@@ -72,6 +83,8 @@ const PRODUCTS: ProductMap = {
       name: "2833",
       image:
         "https://i.postimg.cc/2SB7MDBq/2833.jpg",
+               soldOut: true,
+
          
     },
     {
@@ -79,19 +92,18 @@ const PRODUCTS: ProductMap = {
       name: "2834",
       image:
         "https://i.postimg.cc/G2zFG36K/2834.jpg",
+               soldOut: true,
+
          
     },
-    {
-      id: "mp-8",
-      name: "3255",
-      image:
-        "https://i.postimg.cc/ZnM6s7bv/3255.jpg",
-    },
+   
     {
       id: "mp-9",
       name: "3256",
       image:
         "https://i.postimg.cc/HLgXN7gz/3256.jpg",
+               soldOut: true,
+
     },
     {
       id: "mp-10",
@@ -133,18 +145,24 @@ const PRODUCTS: ProductMap = {
       name: "Black Gold 1",
       image:
         "https://i.postimg.cc/FKr1cbmK/Black-Gold.jpg",
+               soldOut: true,
+
     },
     {
       id: "mp-16",
       name: "Black Gold 2",
       image:
         "https://i.postimg.cc/RF80jjt7/Black-Gold-2.jpg",
+               soldOut: true,
+
     },
     {
       id: "mp-17",
       name: "Blue Gold",
       image:
         "https://i.postimg.cc/fWJB4Fpt/Blue-Gold.jpg",
+               soldOut: true,
+
        //  
     },
     {
@@ -152,6 +170,8 @@ const PRODUCTS: ProductMap = {
       name: "Green Gold",
       image:
         "https://i.postimg.cc/28WGyWzm/Green-Gold.jpg",
+               soldOut: true,
+
     },
     {
       id: "mp-19",
