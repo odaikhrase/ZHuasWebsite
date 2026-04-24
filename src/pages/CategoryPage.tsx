@@ -195,9 +195,9 @@ const PRODUCTS: ProductMap = {
     },
      {
       id: "mp-22",
-      name: "KBJ1-8056",
+      name: "80123",
       image:
-        "https://i.postimg.cc/1Rk0kzDg/KBJ1-8056.jpg",
+        "https://i.postimg.cc/0y5wBX1t/2.jpg",
         comingSoon: true,
     },
      {
