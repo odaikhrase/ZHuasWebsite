@@ -32,7 +32,7 @@ const FEATURES = [
   },
   {
     icon: TreePine,
-    title: "Advanced WPVC Panels",
+    title: "Advanced WPC Panels",
     desc: "Our WPVC panels combine wood‑plastic strength with PVC durability, offering a modern, stylish solution for interior walls, ceilings, and feature designs.",
   },
 ];
