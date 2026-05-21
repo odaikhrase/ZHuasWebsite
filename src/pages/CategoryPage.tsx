@@ -56,6 +56,7 @@ const PRODUCTS: ProductMap = {
       name: "2829",
       image:
         "https://i.postimg.cc/CxWmx1Vt/2829.jpg",
+        soldOut: true,
         
         
          
