@@ -265,12 +265,61 @@ export default function Index() {
           </div>
         </div>
       </section>
+{/* Trust Section */}
+<section className="py-24 bg-background">
+  <div className="container">
+    <ScrollReveal>
+      <div className="text-center mb-16">
+        <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">
+          Trusted Quality
+        </p>
 
+        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground">
+          Why Customers Choose Decor Emperor
+        </h2>
+      </div>
+    </ScrollReveal>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <div className="bg-card/80 backdrop-blur-sm border border-border rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:border-primary/40 transition-all duration-300">
+        <h3 className="font-serif text-xl font-bold mb-4">
+          Premium Materials
+        </h3>
+
+        <p className="text-muted-foreground leading-relaxed">
+          Carefully selected wall panel solutions designed for modern residential and commercial interiors.
+        </p>
+      </div>
+
+      <div className="bg-card/80 backdrop-blur-sm border border-border rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:border-primary/40 transition-all duration-300">
+        <h3 className="font-serif text-xl font-bold mb-4">
+          Local Warehouse
+        </h3>
+
+        <p className="text-muted-foreground leading-relaxed">
+          Convenient local pickup available in Boston, Massachusetts with inventory ready for contractors and homeowners.
+        </p>
+      </div>
+
+      <div className="bg-card/80 backdrop-blur-sm border border-border rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:border-primary/40 transition-all duration-300">
+        <h3 className="font-serif text-xl font-bold mb-4">
+          Modern Luxury Designs
+        </h3>
+
+        <p className="text-muted-foreground leading-relaxed">
+          Elegant marble, WPC, mirror, and stone panel collections that elevate any interior space.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* Shipping Teaser */}
       <section className="py-20 bg-background">
         <div className="container">
           <ScrollReveal>
-            <div className="bg-card border border-border rounded-xl p-12 text-center max-w-2xl mx-auto">
+            <div className="bg-card/80 backdrop-blur-sm border border-border rounded-2xl p-12 text-center max-w-2xl mx-auto shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:border-primary/40 transition-all duration-300">
               <h2 className="font-serif text-2xl font-bold text-foreground mb-4">
                 Shipping & Pickup Policy
               </h2>
