@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-import { Mail, Menu, X, Phone } from "lucide-react";
+import { Mail, Menu, X, Phone, Facebook } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
@@ -192,6 +192,19 @@ function Footer() {
           <p className="text-xs text-secondary-foreground/50">
             High-End Interior Design & Premium Wall Panels
           </p>
+          {/* Facebook */}
+<div className="pt-4 sm:pt-0">
+  <a
+   href="https://www.facebook.com/profile.php?id=61577979308926"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 hover:text-primary transition-colors"
+  >
+    <Facebook className="w-5 h-5" />
+    <span className="text-xs">Follow us on Facebook</span>
+  </a>
+</div>
+          
         </div>
       </div>
     </footer>
