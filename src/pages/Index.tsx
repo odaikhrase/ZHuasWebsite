@@ -61,30 +61,29 @@ export default function Index() {
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-secondary">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center animate-[slowZoom_8s_ease-in-out_infinite_alternate]"
           style={{ backgroundImage: `url(${HERO_IMAGE})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 via-secondary/80 to-secondary/40" />
-        <div className="container relative z-10 py-20">
-          <div className="max-w-2xl">
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-secondary-foreground leading-tight mb-6">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30" />
+        <div className="container relative z-10 py-28 lg:py-36">
+          <div className="max-w-3xl">
+            <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-secondary-foreground leading-[1.05] mb-6">
               Luxury Marble PVC
               <span className="block text-gold-gradient">Wall Panels</span>
             </h1>
-            <p className="text-lg sm:text-xl text-secondary-foreground/80 leading-relaxed mb-10 font-light">
+            <p className="text-lg sm:text-xl text-secondary-foreground/85 leading-relaxed mb-12 font-light max-w-2xl">
               "Durable, waterproof luxury marble PVC wall panels, designed to elevate any residential or commercial space in Boston, Massachusetts."
             </p>
             <div className="flex flex-wrap gap-4">
             <Link
                 to="/products/marble-pvc"
-                className="gold-gradient text-primary-foreground px-8 py-3.5 font-semibold text-sm tracking-wide uppercase rounded hover:opacity-90 transition-opacity"
+                className="gold-gradient backdrop-blur-md text-primary-foreground px-9 py-4 font-semibold text-sm tracking-wide uppercase rounded-2xl shadow-xl hover:scale-105 hover:opacity-90 transition-all duration-300"
               >
                 Explore our Marbel
               </Link>
               <Link
                 to="/products#wpvc"
-                className="border-2 border-primary text-primary px-8 py-3.5 font-semibold text-sm tracking-wide uppercase rounded hover:bg-primary hover:text-primary-foreground transition-colors"
-              >
+className="border border-white/30 backdrop-blur-md text-white px-9 py-4 font-semibold text-sm tracking-wide uppercase rounded-2xl hover:bg-white hover:text-black transition-all duration-300"              >
                 Explore other products
               </Link>
             </div>
@@ -108,69 +107,67 @@ export default function Index() {
                 We Offer Marble PVC Wall Panels, WPC sheets, PU Stone & Mirrors in Boston, Massachusetts
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                ZHaus Design specializes in premium marble PVC wall panels and WPVC sheets for homes and businesses across Boston, Massachusetts. We provide durable, waterproof, low‑maintenance wall solutions ideal for bathrooms, kitchens, basements, and feature walls.
+                Zhaus Design offers marble PVC panels, WPC decorative sheets, PU stone panels, and mirror  designs for homes, contractors, and businesses. Visit our Columbus warehouse to explore available styles and inventory.
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={200}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="group relative overflow-hidden rounded-lg">
-                <img
-                  src="https://i.postimg.cc/76d6Sdnn/marble-main-page.jpg"
-                  alt="Marble PVC Wall Panels"
-                  className="w-full h-80 object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">Marble PVC Panels</h3>
-                </div>
-              </div>
-              <div className="group relative overflow-hidden rounded-lg">
-                <img
-                  src="https://i.postimg.cc/s2XJvCNJ/wpvc-for-main-page.jpg"
-                  alt="WPC Decorative Sheets"
-                  className="w-full h-80 object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">WPC Wood Decorative Sheets</h3>
-                </div>
-              </div>
-              <div className="group relative overflow-hidden rounded-lg">
-                <img
-                  src="https://i.postimg.cc/pLX0n6Gg/mirror-for-main-page.jpg"
-                  alt="Mirror Panels"
-                  className="w-full h-80 object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">Mirror</h3>
-                </div>
-              </div>
-              <div className="group relative overflow-hidden rounded-lg">
-                <img
-                  src="https://i.postimg.cc/Vv8gsG0G/Stone-Panles-for-main-page.jpg"
-                  alt="PU Wall Stone Sheets"
-                  className="w-full h-80 object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent flex items-end p-6">
-                  <h3 className="font-serif text-xl font-bold text-secondary-foreground">PU Wall Stone Sheets</h3>
-                </div>
-              </div>
-            </div>
-            <div className="text-center mt-10">
-              <Link
-                to="/products"
-                className="inline-flex gold-gradient text-black px-10 py-3.5 font-semibold text-sm tracking-wide uppercase rounded hover:opacity-90 transition-opacity"
-              >
-                Explore Our Products
-              </Link>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+  {[
+    {
+      title: "Marble PVC Panels",
+      image: "https://i.postimg.cc/76d6Sdnn/marble-main-page.jpg",
+      alt: "Marble PVC Wall Panels",
+    },
+    {
+      title: "WPC Wood Decorative Sheets",
+      image: "https://i.postimg.cc/s2XJvCNJ/wpvc-for-main-page.jpg",
+      alt: "WPC Decorative Sheets",
+    },
+    {
+      title: "Mirror Wall Panels",
+      image: "https://i.postimg.cc/pLX0n6Gg/mirror-for-main-page.jpg",
+      alt: "Mirror Wall Panels",
+    },
+    {
+      title: "PU Wall Stone Sheets",
+      image: "https://i.postimg.cc/Vv8gsG0G/Stone-Panles-for-main-page.jpg",
+      alt: "PU Wall Stone Sheets",
+    },
+  ].map((item, index) => (
+    <div
+      key={index}
+      className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+    >
+      <img
+        src={item.image}
+        alt={item.alt}
+        className="w-full h-[360px] object-cover transition-transform duration-500 group-hover:scale-105"
+        loading="lazy"
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6">
+        <h3 className="font-serif text-xl font-bold text-white">
+          {item.title}
+        </h3>
+      </div>
+    </div>
+  ))}
+</div>
+
+      {/* Explore button */}
+      <div className="text-center mt-10">
+        <Link
+          to="/products"
+          className="inline-flex gold-gradient text-black px-10 py-3.5 font-semibold text-sm tracking-wide uppercase rounded hover:opacity-90 transition-opacity"
+        >
+          Explore Our Products
+        </Link>
+      </div>
+    </ScrollReveal>
+  </div>
+</section>
 
       {/* Why Choose */}
       <section className="py-24 bg-secondary">
@@ -179,6 +176,7 @@ export default function Index() {
             <div className="text-center mb-16">
               <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">Why Choose Us</p>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-secondary-foreground">
+                
                 Why Choose ZHaus Design
               </h2>
             </div>
@@ -197,33 +195,78 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Panel Specs */}
-      <section className="py-20 bg-background">
-        <div className="container">
-          <ScrollReveal>
-            <div className="gold-gradient rounded-xl p-12 sm:p-16 text-center">
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-primary-foreground mb-4">
-                Panel Specifications
-              </h2>
-              <div className="flex flex-wrap justify-center gap-12 mt-8">
-                <div>
-                  <p className="text-5xl font-serif font-bold text-primary-foreground">9 × 4</p>
-                  <p className="text-primary-foreground/80 text-sm mt-2 uppercase tracking-wide">Feet (Panel Size)</p>
-                </div>
-                <div className="w-px bg-primary-foreground/30 hidden sm:block" />
-                <div>
-                  <p className="text-5xl font-serif font-bold text-primary-foreground">8 mm</p>
-                  <p className="text-primary-foreground/80 text-sm mt-2 uppercase tracking-wide">Thickness</p>
-                </div>
-              </div>
-              <p className="text-primary-foreground/80 mt-8 max-w-xl mx-auto text-sm leading-relaxed">
-                Broad coverage and a premium, high‑end feel suitable for both residential and commercial spaces.
-              </p>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
+      {/* Panel Specifications */}
+<section className="py-24 bg-secondary">
+  <div className="container">
+    <ScrollReveal>
+      <div className="text-center max-w-3xl mx-auto mb-16">
+        <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">
+          Product Details
+        </p>
 
+        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-secondary-foreground mb-6">
+          Panel Specifications
+        </h2>
+
+        <p className="text-muted-foreground leading-relaxed">
+          Our wall panels are designed for interior applications with large-format sizes, modern finishes, and easy maintenance.
+        </p>
+      </div>
+    </ScrollReveal>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="bg-background/80 border border-border rounded-2xl p-8 text-center shadow-lg">
+        <h3 className="font-serif text-xl font-bold mb-3">Panel Size</h3>
+        <p className="text-muted-foreground">9 ft x 4 ft</p>
+      </div>
+
+      <div className="bg-background/80 border border-border rounded-2xl p-8 text-center shadow-lg">
+        <h3 className="font-serif text-xl font-bold mb-3">Application</h3>
+        <p className="text-muted-foreground">Interior walls, bathrooms, kitchens, TV walls, and feature walls</p>
+      </div>
+
+      <div className="bg-background/80 border border-border rounded-2xl p-8 text-center shadow-lg">
+        <h3 className="font-serif text-xl font-bold mb-3">Benefits</h3>
+        <p className="text-muted-foreground">Water-resistant, lightweight, low maintenance, and modern luxury appearance</p>
+      </div>
+    </div>
+  </div>
+</section>
+{/* Popular Applications */}
+<section className="py-24 bg-secondary">
+  <div className="container">
+    <ScrollReveal>
+      <div className="text-center mb-16">
+        <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">
+          Applications
+        </p>
+        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-secondary-foreground">
+          Perfect for Modern Interior Spaces
+        </h2>
+      </div>
+    </ScrollReveal>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        "Bathroom Walls",
+        "TV Feature Walls",
+        "Kitchen Backsplash",
+        "Office Walls",
+        "Hallways",
+        "Commercial Spaces",
+      ].map((item) => (
+        <div
+          key={item}
+          className="bg-secondary-foreground/5 border border-secondary-foreground/10 rounded-lg p-8 text-center hover:border-primary/50 transition-colors"
+        >
+          <h3 className="font-serif text-xl font-bold text-secondary-foreground">
+            {item}
+          </h3>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
       {/* Recent Installations */}
       <section className="py-24 bg-secondary">
         <div className="container">
