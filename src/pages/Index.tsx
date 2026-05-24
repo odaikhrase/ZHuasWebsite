@@ -275,7 +275,7 @@ export default function Index() {
         </p>
 
         <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground">
-          Why Customers Choose Decor Emperor
+          Why Customers Choose ZHaus Design
         </h2>
       </div>
     </ScrollReveal>
