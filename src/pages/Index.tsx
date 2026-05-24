@@ -237,7 +237,7 @@ export default function Index() {
           </ScrollReveal>
           <div
             ref={carouselRef}
-            className="flex gap-6 overflow-x-auto pb-4 cursor-grab snap-x snap-mandatory scrollbar-hide"
+            className="flex gap-8 overflow-x-auto pb-4 cursor-grab snap-x snap-mandatory scrollbar-hide"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
@@ -247,11 +247,11 @@ export default function Index() {
             {INSTALLATION_IMAGES.map((img, i) => (
               <div key={i} className="flex-shrink-0 w-72 sm:w-80 snap-center">
                 <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full h-96 object-cover rounded-lg hover:scale-[1.02] transition-transform duration-300"
-                  loading="lazy"
-                />
+  src={img.src}
+  alt={img.alt}
+  className="w-full aspect-[4/5] object-cover rounded-2xl hover:scale-[1.02] transition-transform duration-300"
+  loading="lazy"
+/>
               </div>
             ))}
           </div>
