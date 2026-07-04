@@ -3,6 +3,8 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ArrowLeft, X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import { CATEGORIES } from "./Products";
+import FAQ from "@/components/FAQ";
+
 
 // ─── TYPES ────────────────────────────────────────────────────────────────────
 interface Product {
@@ -783,6 +785,7 @@ export default function CategoryPage() {
           )}
         </div>
       </section>
+<FAQ />
 
       {/* ── Bottom CTA ── */}
       <section className="py-16 bg-secondary">
